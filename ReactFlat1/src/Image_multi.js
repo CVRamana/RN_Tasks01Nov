@@ -3,7 +3,7 @@ import {
   View, Text, Image,
   StyleSheet,
   TouchableOpacity,
-  FlatList
+  FlatList,Button
 } from 'react-native'
 import ImagePicker from 'react-native-image-crop-picker';
 export default class Image_multi extends Component {
@@ -47,6 +47,14 @@ export default class Image_multi extends Component {
           >
             <Text>Pick Multiple</Text>
           </TouchableOpacity>
+
+
+          <Button
+          title="Go back"
+          onPress={() => this.props.navigation.goBack()}
+        />
+
+
         </View>
         <View style={{height:200,backgroundColor:"pink"}}>
           <FlatList

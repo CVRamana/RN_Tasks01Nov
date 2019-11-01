@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet,ScrollView } from 'react-native';
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 import Details from '../src/Details'
@@ -11,6 +11,7 @@ import ReacTTest from '../src/ReacTTest'
 import Post_API from '../src/Post_API'
 import Screen_Assignment999 from '../src/Screen_Assignment999'
 import Screen_Assign3 from '../src/Screen_Assign3'
+//import Image_Picker from '../src/Image_Picker'
 
 
 //import ReactFlat11 from '../../../ReactNativePractice/src/ReactFlat11'
@@ -28,6 +29,7 @@ class HomeScreen extends React.Component {
                 <Text style={styles.txt}>Home Screen</Text>
 
                 <View style={styles.child_Container}>
+                    <ScrollView>
                     <Button_Comp
                         title="Go to Detail"
                         call={() => this.props.navigation.navigate('Details')}
@@ -62,8 +64,12 @@ class HomeScreen extends React.Component {
                         title="Screen2"
                         call={() => this.props.navigation.navigate('Screen2')}
                     />
+                     {/* <Button_Comp
+                        title="Select Image"
+                        call={() => this.props.navigation.navigate('Select_Image')}
+                    /> */}
 
-
+               </ScrollView>
                 </View>
 
             </View>
@@ -80,7 +86,8 @@ const AppNavigator = createStackNavigator(
         Axios_Api:ReacTTest,
         Post_Api:Post_API,
         Screen1:Screen_Assignment999,
-        Screen2:Screen_Assign3
+        Screen2:Screen_Assign3,
+      //  Select_Image:Image_Picker
     },
     {
         initialRouteName: "Home"
@@ -105,6 +112,7 @@ const styles = StyleSheet.create({
     child_Container: {
         backgroundColor: "pink",
         margin: 20,
+        flex:1
     }
 
 })

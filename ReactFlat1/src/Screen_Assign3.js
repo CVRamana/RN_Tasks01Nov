@@ -29,40 +29,40 @@ const Data = [{
     path: 'https://images.pexels.com/photos/3083166/pexels-photo-3083166.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
 },
 {
-    id: 4,
-    path: 'https://images.pexels.com/photos/3083166/pexels-photo-3083166.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
-}, {
-    id: 4,
-    path: 'https://images.pexels.com/photos/3083166/pexels-photo-3083166.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
-}, {
-    id: 4,
-    path: 'https://images.pexels.com/photos/3083166/pexels-photo-3083166.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
-}, {
-    id: 4,
-    path: 'https://images.pexels.com/photos/3083166/pexels-photo-3083166.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
-},
-{
     id: 5,
-    path: 'https://images.pexels.com/photos/2994590/pexels-photo-2994590.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
-},
-{
+    path: 'https://images.pexels.com/photos/3083166/pexels-photo-3083166.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
+}, {
     id: 6,
-    path: 'https://images.pexels.com/photos/1128240/pexels-photo-1128240.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
-},
-{
+    path: 'https://images.pexels.com/photos/3083166/pexels-photo-3083166.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
+}, {
     id: 7,
-    path: 'https://images.pexels.com/photos/1212956/pexels-photo-1212956.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
-},
-{
+    path: 'https://images.pexels.com/photos/3083166/pexels-photo-3083166.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
+}, {
     id: 8,
-    path: 'https://images.pexels.com/photos/1212956/pexels-photo-1212956.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
+    path: 'https://images.pexels.com/photos/3083166/pexels-photo-3083166.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
 },
 {
     id: 9,
-    path: 'https://images.pexels.com/photos/1212956/pexels-photo-1212956.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
+    path: 'https://images.pexels.com/photos/2994590/pexels-photo-2994590.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
 },
 {
     id: 10,
+    path: 'https://images.pexels.com/photos/1128240/pexels-photo-1128240.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+},
+{
+    id: 11,
+    path: 'https://images.pexels.com/photos/1212956/pexels-photo-1212956.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
+},
+{
+    id: 12,
+    path: 'https://images.pexels.com/photos/1212956/pexels-photo-1212956.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
+},
+{
+    id: 13,
+    path: 'https://images.pexels.com/photos/1212956/pexels-photo-1212956.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
+},
+{
+    id: 14,
     path: 'https://images.pexels.com/photos/1212956/pexels-photo-1212956.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
 }
 ]
@@ -79,6 +79,10 @@ function Item({ path }) {
 const col = 3;
 
 export default class Screen_Assign3 extends React.Component {
+    static navigationOptions = {
+        title: 'Screen2',
+      };
+    
 
     renderHeader() {
         return (

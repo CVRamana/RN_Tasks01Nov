@@ -7,6 +7,11 @@ import {
 } from 'react-native'
 import ImagePicker from 'react-native-image-crop-picker';
 export default class Image_multi extends Component {
+  static navigationOptions = {
+    title: 'Gallery',
+    headerBackTitle: 'Go Back'
+  };
+
   constructor(props) {
     super(props)
     this.state = {
@@ -47,30 +52,21 @@ export default class Image_multi extends Component {
           >
             <Text>Pick Multiple</Text>
           </TouchableOpacity>
-
-
           <Button
           title="Go back"
           onPress={() => this.props.navigation.goBack()}
         />
-
-
         </View>
-        <View style={{height:200,backgroundColor:"pink"}}>
+        <View style={{height:200,marginTop:10,backgroundColor:"pink"}}>
           <FlatList
           //  style={{ backgroundColor: 'green' }}
-            data={this.state.images}
-            renderItem={
-              ({ item }) => {
-                <View>
-                <Image
-                  style={styles.img}
-                  source={{ uri: item.uri }}
-                /> 
-                <Text>jhgjhv</Text>
-                <Text>jhgjhv</Text>
-                <Text>jhgjhv</Text>
-                </View>}
+            data={this.state.source}
+            renderItem={ ({ item }) => { 
+              <Text>{item.uri}</Text>
+            {/* // <Image style={styles.img}
+            //       source={{ uri: item.uri }}
+            //     />  */}
+                }
             }
             keyExtractor={(item)=>item.uri} />
         </View>
@@ -92,8 +88,8 @@ const styles = StyleSheet.create({
     backgroundColor: "red"
   },
   img: {
-    width: 200,
-    height: 200
+    width: 100,
+    height: 100
   },
   flat: {
 

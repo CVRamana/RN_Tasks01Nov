@@ -21,7 +21,7 @@ class Button_Comp extends Component {
 export default Button_Comp;
 const styles = StyleSheet.create({
     bttn: {
-        width: 180,
+        width: 290,
         height: 40,
         margin:20,
         alignItems:"center",

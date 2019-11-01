@@ -17,7 +17,7 @@ class ReactFlat_input extends Component {
                 onChangeText={(val)=> this.props.search(val)}/>
                 <TouchableOpacity style={styles.bttn}
                     onPress={()=>this.props.handleSearch()}>
-                    <Text style={{ fontSize: 40, color: "green" }}>Go</Text>
+                    <Text style={{ fontSize: 30, color: "green" }}>Go</Text>
                 </TouchableOpacity>
             </View>
         );
@@ -28,7 +28,7 @@ export default ReactFlat_input;
 
 const styles = StyleSheet.create({
     head: {
-        paddingTop: 50,
+        paddingTop: 10,
         backgroundColor: "orange",
         alignItems: "center",
         paddingBottom: 10,
@@ -37,8 +37,8 @@ const styles = StyleSheet.create({
     },
     input: {
         backgroundColor: "white",
-        width: 300,
-        height: 50,
+        width: 240,
+        height: 40,
         borderRadius: 20,
         paddingLeft: 20
 

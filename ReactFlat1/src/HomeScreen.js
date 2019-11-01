@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet,ScrollView } from 'react-native';
+import { View, Text, StyleSheet,ScrollView,Button } from 'react-native';
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 import Details from '../src/Details'
@@ -11,24 +11,29 @@ import ReacTTest from '../src/ReacTTest'
 import Post_API from '../src/Post_API'
 import Screen_Assignment999 from '../src/Screen_Assignment999'
 import Screen_Assign3 from '../src/Screen_Assign3'
-//import Image_Picker from '../src/Image_Picker'
-
-
+import Image_Picker from '../src/Image_Picker'
+import login_form from '../src/login_form'
+import { TouchableOpacity } from 'react-native-gesture-handler';
 //import ReactFlat11 from '../../../ReactNativePractice/src/ReactFlat11'
 
-
 class HomeScreen extends React.Component {
+    
     constructor(props) {
         super(props);
 
         console.log(this.props)
     }
+    static navigationOptions = {
+        title: 'Home',
+        headerBackTitle:"Go Back"
+       
+      };
     render() {
         return (
             <View style={styles.Container}>
                 <Text style={styles.txt}>Home Screen</Text>
 
-                <View style={styles.child_Container}>
+                {/* <View style={styles.child_Container}> */}
                     <ScrollView>
                     <Button_Comp
                         title="Go to Detail"
@@ -64,13 +69,17 @@ class HomeScreen extends React.Component {
                         title="Screen2"
                         call={() => this.props.navigation.navigate('Screen2')}
                     />
-                     {/* <Button_Comp
+                     <Button_Comp
                         title="Select Image"
                         call={() => this.props.navigation.navigate('Select_Image')}
-                    /> */}
+                    />
+                    <Button_Comp
+                        title="Log In"
+                        call={() => this.props.navigation.navigate('login')}
+                    />
 
                </ScrollView>
-                </View>
+                {/* </View> */}
 
             </View>
         );
@@ -87,10 +96,27 @@ const AppNavigator = createStackNavigator(
         Post_Api:Post_API,
         Screen1:Screen_Assignment999,
         Screen2:Screen_Assign3,
-      //  Select_Image:Image_Picker
+        Select_Image:Image_Picker,
+        login:login_form
     },
     {
-        initialRouteName: "Home"
+        initialRouteName: "Home",
+        defaultNavigationOptions:{
+            headerStyle: {
+                backgroundColor: '#f4511e',
+              },
+              headerTintColor: '#fff',
+              headerTitleStyle: {
+                fontWeight: 'bold',
+              },
+              headerRight:()=>(
+                  <TouchableOpacity style={{paddingRight: 10,}}
+                  onPress={()=>{alert("Please add")}}>
+                      <Text style={{fontSize:40}}>+</Text>                     
+  </TouchableOpacity>
+)
+
+        }
     }
 );
 const AppContainer = createAppContainer(AppNavigator);
@@ -103,14 +129,15 @@ const styles = StyleSheet.create({
     Container: {
         backgroundColor: "grey",
         flex: 1,
-        alignItems: "center"
+        alignItems: "center",
+        justifyContent:"center"
     },
     txt: {
         fontSize: 20,
         fontWeight: "bold"
     },
     child_Container: {
-        backgroundColor: "pink",
+       // backgroundColor: "pink",
         margin: 20,
         flex:1
     }

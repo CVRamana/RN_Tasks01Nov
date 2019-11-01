@@ -10,11 +10,8 @@ const ReactFlat_Card = (props) => {
                 onLoad={()=>{  
                 }}  
               //  onLoadStart={(e) => this.setState({loading: true})}
-
                 style={styles.img}
-
                 source={{ uri: props.avatar }}
-
             />
             <Text style={styles.txt}>{props.email}</Text>
 
@@ -30,13 +27,13 @@ const styles = StyleSheet.create({
         alignItems:"center"
     },
     img: {
-        width: 100,
-        height: 100,
+        width: 80,
+        height: 80,
         borderRadius:10
     },
     txt:{
-        fontSize:20,
-        paddingLeft:10
+        fontSize:15,
+        padding:10
 
     }
 })

@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import { View, Text, StyleSheet, Image, ScrollView } from 'react-native'
 
 export default class componentName extends Component {
+    static navigationOptions = {
+        title: 'Screen3',
+      };
+    
     render() {
         return (
             <ScrollView>

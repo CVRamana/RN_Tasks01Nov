@@ -21,12 +21,21 @@ class Button_Comp extends Component {
 export default Button_Comp;
 const styles = StyleSheet.create({
     bttn: {
-        width: 110,
-        height: 30,
+        width: 180,
+        height: 40,
         margin:20,
         alignItems:"center",
         justifyContent:"center",
         backgroundColor:"orange",
+        shadowColor: "#000",
+shadowOffset: {
+	width: 0,
+	height: 2,
+},
+shadowOpacity: 0.25,
+shadowRadius: 3.84,
+
+elevation: 5,
         borderRadius:10
     }
 })

@@ -3,6 +3,10 @@ import {View,Text, StyleSheet,props,TouchableOpacity,Image} from 'react-native'
 import axios from 'axios'
 
 export default class Post_API extends Component {
+    static navigationOptions = {
+        title: 'Post Api',
+      };
+    
     constructor(props){
         super(props)
         this.state={

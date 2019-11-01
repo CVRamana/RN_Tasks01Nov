@@ -4,6 +4,10 @@ import Child_Img from '../src/Child_Img'
 import Images from '../Constants/Images'
 
 class Screen_Assign_PureComp extends Component {
+    static navigationOptions = {
+        title: 'Screen1',
+      };
+    
     render() {
         return (
             // <View style={{flex:1}}>

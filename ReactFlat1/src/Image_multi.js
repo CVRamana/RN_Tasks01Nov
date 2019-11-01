@@ -9,7 +9,7 @@ import ImagePicker from 'react-native-image-crop-picker';
 export default class Image_multi extends Component {
   static navigationOptions = {
     title: 'Gallery',
-    headerBackTitle: 'Go Back'
+    headerBackTitle:'Go Back'
   };
 
   constructor(props) {

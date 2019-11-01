@@ -9,6 +9,10 @@ import ReactFlat_Card from '../src/ReactFlat_Card';
 import axios from 'axios'
 let page=1
 export default class ReactFlat11 extends Component {
+    static navigationOptions = {
+        title: 'Page fetch',
+      };
+    
     constructor(props) {
         super(props)
         this.state = {

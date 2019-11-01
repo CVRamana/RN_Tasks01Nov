@@ -8,6 +8,10 @@ import {
 import ImagePicker from 'react-native-image-crop-picker';
 
 export default class componentName extends Component {
+  static navigationOptions = {
+    title: 'Camera',
+  };
+
 constructor(props) {
   super(props)
   this.state = {

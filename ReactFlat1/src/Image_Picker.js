@@ -9,6 +9,10 @@ import {
 import ImagePicker from 'react-native-image-crop-picker';
 
 class Image_picker extends Component {
+    static navigationOptions = {
+        title: 'Pick 1 Image',
+      };
+    
     constructor(props) {
         super(props)
         this.state = {

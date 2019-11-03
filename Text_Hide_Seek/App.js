@@ -1,53 +1,57 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet,TouchableOpacity, Button } from 'react-native';
+import { View, Text, StyleSheet,TouchableOpacity, Button,props } from 'react-native';
+
+class TextExp extends Component {
+  render() {
+    return (
+      <View > 
+        <Text
+        numberOfLines={this.props.lines}>any of those examples doesn't work properly when you try to create animated 
+          spinner. Like I already mentioned in my answer on android trying to switch
+           img for anim gif, will cause 5s delay when no png nor gif is shown. I believe the delay is caused by loading gif into memory, which might take some time. 
+          However iOS seems to do much better job here. If you don't believe me, 
+          try it yourself
+          </Text> 
+          </View>
+    );
+  }
+}
 
 class Text_Hide_Seek extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      lines: 2,
-      expand: true
+      lines: 0,
+      isHidden:true
     };
   }
-  handleClick = () => {
+
+  Handle=()=> {
     this.setState({
-     lines:7
+      isHidden: !(this.state.isHidden),
+     lines: this.state.isHidden?2:6
+     
     })
+    console.warn(this.state.lines)
   }
   render() {
     return (
       <View style={styles.parent}>
-        <Text style={styles.txt}
-          numberOfLines={this.state.lines}
-        >
-          Text supports nesting, styling, and touch handling.
-          In the following example, the nested title
-          and body text will inherit the fontFamily from styles.baseText,
-          but the title provides its own additional styles.
-          The title and body will stack on top of each other on account of the literal newlines:
- </Text>
-        <Button title="Read more"
-          style={styles.btn}
-          onPress={this.handleClick}
-        />
-        {/* <TouchableOpacity 
-        style={styles.btn}
-        onPress={this.handleClick}>
-
-      if ({this.state.expand} ){
-       <Text>"Read more.." </Text>
-       } else{<Text>"Read Less"</Text>
-      }
-          </TouchableOpacity> */}
+            {this.state.isHidden ? <TextExp lines={2} /> : <TextExp lines={7}/>}
+<Button
+style={styles.btn}
+title= {this.state.isHidden ? "SHOW" : "HIDE"} onPress={this.Handle}
+ />
       </View>
     );
   }
 }
-
 export default Text_Hide_Seek;
 const styles = StyleSheet.create({
   parent: {
     paddingTop: 50,
+    paddingLeft:20,
+    paddingRight:20,
     alignItems: "center",
     flex: 1,
   },
@@ -55,6 +59,9 @@ const styles = StyleSheet.create({
     fontSize: 20
   },
   btn: {
-    backgroundColor: "green"
+    backgroundColor:"green",
+    height:50,
+    width:100,
+    paddingLeft:100
   }
 })

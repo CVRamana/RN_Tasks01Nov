@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* PassMethod_as_PropsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* PassMethod_as_PropsTests.m */; };
+		00E356F31AD99517003FC87E /* Text_Hide_SeekTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* Text_Hide_SeekTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -15,11 +15,11 @@
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2DCD954D1E0B4F2C00145EB5 /* PassMethod_as_PropsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* PassMethod_as_PropsTests.m */; };
-		5B5DFA5EAC08E291EFBC319B /* libPods-PassMethod_as_Props-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 065F6FB362BB4D430F871EDC /* libPods-PassMethod_as_Props-tvOS.a */; };
-		A017FF7A6023A7ACAF3A127C /* libPods-PassMethod_as_Props-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B1EE266C0D248C4B773AE40 /* libPods-PassMethod_as_Props-tvOSTests.a */; };
-		EC7A2A4CB6767CFCB7AE5629 /* libPods-PassMethod_as_PropsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD5AC209DA7BD7295BB6D8DA /* libPods-PassMethod_as_PropsTests.a */; };
-		EDCC5C9F3D97C0F9E2B13D56 /* libPods-PassMethod_as_Props.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9AFBFBF2D305CA108CBAB08 /* libPods-PassMethod_as_Props.a */; };
+		2DCD954D1E0B4F2C00145EB5 /* Text_Hide_SeekTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* Text_Hide_SeekTests.m */; };
+		33BFE937F23005A4071913BB /* libPods-Text_Hide_SeekTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A25DC2A3112D916DEC27C9BC /* libPods-Text_Hide_SeekTests.a */; };
+		5AAD3D16E794B6C5423FED9A /* libPods-Text_Hide_Seek-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C94E24BD673E887E48405C /* libPods-Text_Hide_Seek-tvOS.a */; };
+		9597C446626894B0639C3663 /* libPods-Text_Hide_Seek.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADE8B6D28EEA763CF2080514 /* libPods-Text_Hide_Seek.a */; };
+		A54FC312406FC68FEBD8ACD9 /* libPods-Text_Hide_Seek-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2011B5DE6E7A320ACC5CEFC7 /* libPods-Text_Hide_Seek-tvOSTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,45 +28,45 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = PassMethod_as_Props;
+			remoteInfo = Text_Hide_Seek;
 		};
 		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
-			remoteInfo = "PassMethod_as_Props-tvOS";
+			remoteInfo = "Text_Hide_Seek-tvOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* PassMethod_as_PropsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PassMethod_as_PropsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* Text_Hide_SeekTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Text_Hide_SeekTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* PassMethod_as_PropsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PassMethod_as_PropsTests.m; sourceTree = "<group>"; };
-		065F6FB362BB4D430F871EDC /* libPods-PassMethod_as_Props-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PassMethod_as_Props-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07F961A680F5B00A75B9A /* PassMethod_as_Props.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PassMethod_as_Props.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = PassMethod_as_Props/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = PassMethod_as_Props/AppDelegate.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* Text_Hide_SeekTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Text_Hide_SeekTests.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* Text_Hide_Seek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Text_Hide_Seek.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Text_Hide_Seek/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Text_Hide_Seek/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = PassMethod_as_Props/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = PassMethod_as_Props/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = PassMethod_as_Props/main.m; sourceTree = "<group>"; };
-		2D02E47B1E0B4A5D006451C7 /* PassMethod_as_Props-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PassMethod_as_Props-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E4901E0B4A5D006451C7 /* PassMethod_as_Props-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PassMethod_as_Props-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4F6E9DE0E2A051A94A7B4B2D /* Pods-PassMethod_as_Props-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassMethod_as_Props-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-PassMethod_as_Props-tvOSTests/Pods-PassMethod_as_Props-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		61F1311492E9A7498D2DA484 /* Pods-PassMethod_as_Props-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassMethod_as_Props-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-PassMethod_as_Props-tvOS/Pods-PassMethod_as_Props-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		695C823EF5B60F5CE91ED0C0 /* Pods-PassMethod_as_Props-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassMethod_as_Props-tvOS.release.xcconfig"; path = "Target Support Files/Pods-PassMethod_as_Props-tvOS/Pods-PassMethod_as_Props-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		7FEE175B5D60F57E0341C5F7 /* Pods-PassMethod_as_Props-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassMethod_as_Props-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-PassMethod_as_Props-tvOSTests/Pods-PassMethod_as_Props-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		9B1EE266C0D248C4B773AE40 /* libPods-PassMethod_as_Props-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PassMethod_as_Props-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9EE5ADB68EBA30DFC2055325 /* Pods-PassMethod_as_PropsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassMethod_as_PropsTests.debug.xcconfig"; path = "Target Support Files/Pods-PassMethod_as_PropsTests/Pods-PassMethod_as_PropsTests.debug.xcconfig"; sourceTree = "<group>"; };
-		B065B6BD30E8F8DE95C4F189 /* Pods-PassMethod_as_PropsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassMethod_as_PropsTests.release.xcconfig"; path = "Target Support Files/Pods-PassMethod_as_PropsTests/Pods-PassMethod_as_PropsTests.release.xcconfig"; sourceTree = "<group>"; };
-		B0B0181B73C5D4C81CEA2B61 /* Pods-PassMethod_as_Props.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassMethod_as_Props.debug.xcconfig"; path = "Target Support Files/Pods-PassMethod_as_Props/Pods-PassMethod_as_Props.debug.xcconfig"; sourceTree = "<group>"; };
-		B9AFBFBF2D305CA108CBAB08 /* libPods-PassMethod_as_Props.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PassMethod_as_Props.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Text_Hide_Seek/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Text_Hide_Seek/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Text_Hide_Seek/main.m; sourceTree = "<group>"; };
+		2011B5DE6E7A320ACC5CEFC7 /* libPods-Text_Hide_Seek-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Text_Hide_Seek-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		23EE6AF970E0A1BB64A12FC4 /* Pods-Text_Hide_Seek.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Text_Hide_Seek.debug.xcconfig"; path = "Target Support Files/Pods-Text_Hide_Seek/Pods-Text_Hide_Seek.debug.xcconfig"; sourceTree = "<group>"; };
+		2681418B4E774CDCC33B3D30 /* Pods-Text_Hide_SeekTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Text_Hide_SeekTests.debug.xcconfig"; path = "Target Support Files/Pods-Text_Hide_SeekTests/Pods-Text_Hide_SeekTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2D02E47B1E0B4A5D006451C7 /* Text_Hide_Seek-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Text_Hide_Seek-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* Text_Hide_Seek-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Text_Hide_Seek-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3199A857AEE1607481BF381B /* Pods-Text_Hide_Seek-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Text_Hide_Seek-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Text_Hide_Seek-tvOSTests/Pods-Text_Hide_Seek-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		50626077DAD0E7B7FEF03D87 /* Pods-Text_Hide_SeekTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Text_Hide_SeekTests.release.xcconfig"; path = "Target Support Files/Pods-Text_Hide_SeekTests/Pods-Text_Hide_SeekTests.release.xcconfig"; sourceTree = "<group>"; };
+		62C94E24BD673E887E48405C /* libPods-Text_Hide_Seek-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Text_Hide_Seek-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7860DE77D7EC6CD4969B51EF /* Pods-Text_Hide_Seek-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Text_Hide_Seek-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-Text_Hide_Seek-tvOS/Pods-Text_Hide_Seek-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		8634654CCB2742FDFF4308C5 /* Pods-Text_Hide_Seek.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Text_Hide_Seek.release.xcconfig"; path = "Target Support Files/Pods-Text_Hide_Seek/Pods-Text_Hide_Seek.release.xcconfig"; sourceTree = "<group>"; };
+		8A1FF17AD6E2FB124D02A566 /* Pods-Text_Hide_Seek-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Text_Hide_Seek-tvOS.release.xcconfig"; path = "Target Support Files/Pods-Text_Hide_Seek-tvOS/Pods-Text_Hide_Seek-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		A25DC2A3112D916DEC27C9BC /* libPods-Text_Hide_SeekTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Text_Hide_SeekTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADE8B6D28EEA763CF2080514 /* libPods-Text_Hide_Seek.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Text_Hide_Seek.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D14473BD61D1E362D1D642A6 /* Pods-Text_Hide_Seek-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Text_Hide_Seek-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-Text_Hide_Seek-tvOSTests/Pods-Text_Hide_Seek-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		FA08A45BB203E37E57F80727 /* Pods-PassMethod_as_Props.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassMethod_as_Props.release.xcconfig"; path = "Target Support Files/Pods-PassMethod_as_Props/Pods-PassMethod_as_Props.release.xcconfig"; sourceTree = "<group>"; };
-		FD5AC209DA7BD7295BB6D8DA /* libPods-PassMethod_as_PropsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PassMethod_as_PropsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC7A2A4CB6767CFCB7AE5629 /* libPods-PassMethod_as_PropsTests.a in Frameworks */,
+				33BFE937F23005A4071913BB /* libPods-Text_Hide_SeekTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDCC5C9F3D97C0F9E2B13D56 /* libPods-PassMethod_as_Props.a in Frameworks */,
+				9597C446626894B0639C3663 /* libPods-Text_Hide_Seek.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B5DFA5EAC08E291EFBC319B /* libPods-PassMethod_as_Props-tvOS.a in Frameworks */,
+				5AAD3D16E794B6C5423FED9A /* libPods-Text_Hide_Seek-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,20 +98,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A017FF7A6023A7ACAF3A127C /* libPods-PassMethod_as_Props-tvOSTests.a in Frameworks */,
+				A54FC312406FC68FEBD8ACD9 /* libPods-Text_Hide_Seek-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* PassMethod_as_PropsTests */ = {
+		00E356EF1AD99517003FC87E /* Text_Hide_SeekTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* PassMethod_as_PropsTests.m */,
+				00E356F21AD99517003FC87E /* Text_Hide_SeekTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = PassMethod_as_PropsTests;
+			path = Text_Hide_SeekTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -122,7 +122,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* PassMethod_as_Props */ = {
+		13B07FAE1A68108700A75B9A /* Text_Hide_Seek */ = {
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
@@ -133,7 +133,7 @@
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = PassMethod_as_Props;
+			name = Text_Hide_Seek;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -141,10 +141,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				B9AFBFBF2D305CA108CBAB08 /* libPods-PassMethod_as_Props.a */,
-				065F6FB362BB4D430F871EDC /* libPods-PassMethod_as_Props-tvOS.a */,
-				9B1EE266C0D248C4B773AE40 /* libPods-PassMethod_as_Props-tvOSTests.a */,
-				FD5AC209DA7BD7295BB6D8DA /* libPods-PassMethod_as_PropsTests.a */,
+				ADE8B6D28EEA763CF2080514 /* libPods-Text_Hide_Seek.a */,
+				62C94E24BD673E887E48405C /* libPods-Text_Hide_Seek-tvOS.a */,
+				2011B5DE6E7A320ACC5CEFC7 /* libPods-Text_Hide_Seek-tvOSTests.a */,
+				A25DC2A3112D916DEC27C9BC /* libPods-Text_Hide_SeekTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -159,12 +159,12 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* PassMethod_as_Props */,
+				13B07FAE1A68108700A75B9A /* Text_Hide_Seek */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* PassMethod_as_PropsTests */,
+				00E356EF1AD99517003FC87E /* Text_Hide_SeekTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				E2B920845CF28F5449BB3B02 /* Pods */,
+				9239FF99A47419FF2247DA05 /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -174,37 +174,38 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* PassMethod_as_Props.app */,
-				00E356EE1AD99517003FC87E /* PassMethod_as_PropsTests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* PassMethod_as_Props-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* PassMethod_as_Props-tvOSTests.xctest */,
+				13B07F961A680F5B00A75B9A /* Text_Hide_Seek.app */,
+				00E356EE1AD99517003FC87E /* Text_Hide_SeekTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* Text_Hide_Seek-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* Text_Hide_Seek-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E2B920845CF28F5449BB3B02 /* Pods */ = {
+		9239FF99A47419FF2247DA05 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B0B0181B73C5D4C81CEA2B61 /* Pods-PassMethod_as_Props.debug.xcconfig */,
-				FA08A45BB203E37E57F80727 /* Pods-PassMethod_as_Props.release.xcconfig */,
-				61F1311492E9A7498D2DA484 /* Pods-PassMethod_as_Props-tvOS.debug.xcconfig */,
-				695C823EF5B60F5CE91ED0C0 /* Pods-PassMethod_as_Props-tvOS.release.xcconfig */,
-				7FEE175B5D60F57E0341C5F7 /* Pods-PassMethod_as_Props-tvOSTests.debug.xcconfig */,
-				4F6E9DE0E2A051A94A7B4B2D /* Pods-PassMethod_as_Props-tvOSTests.release.xcconfig */,
-				9EE5ADB68EBA30DFC2055325 /* Pods-PassMethod_as_PropsTests.debug.xcconfig */,
-				B065B6BD30E8F8DE95C4F189 /* Pods-PassMethod_as_PropsTests.release.xcconfig */,
+				23EE6AF970E0A1BB64A12FC4 /* Pods-Text_Hide_Seek.debug.xcconfig */,
+				8634654CCB2742FDFF4308C5 /* Pods-Text_Hide_Seek.release.xcconfig */,
+				7860DE77D7EC6CD4969B51EF /* Pods-Text_Hide_Seek-tvOS.debug.xcconfig */,
+				8A1FF17AD6E2FB124D02A566 /* Pods-Text_Hide_Seek-tvOS.release.xcconfig */,
+				3199A857AEE1607481BF381B /* Pods-Text_Hide_Seek-tvOSTests.debug.xcconfig */,
+				D14473BD61D1E362D1D642A6 /* Pods-Text_Hide_Seek-tvOSTests.release.xcconfig */,
+				2681418B4E774CDCC33B3D30 /* Pods-Text_Hide_SeekTests.debug.xcconfig */,
+				50626077DAD0E7B7FEF03D87 /* Pods-Text_Hide_SeekTests.release.xcconfig */,
 			);
+			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* PassMethod_as_PropsTests */ = {
+		00E356ED1AD99517003FC87E /* Text_Hide_SeekTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "PassMethod_as_PropsTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "Text_Hide_SeekTests" */;
 			buildPhases = (
-				5E35847F5119A401E92CB037 /* [CP] Check Pods Manifest.lock */,
+				48C737103B24BA440F570AE2 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
@@ -214,16 +215,16 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = PassMethod_as_PropsTests;
-			productName = PassMethod_as_PropsTests;
-			productReference = 00E356EE1AD99517003FC87E /* PassMethod_as_PropsTests.xctest */;
+			name = Text_Hide_SeekTests;
+			productName = Text_Hide_SeekTests;
+			productReference = 00E356EE1AD99517003FC87E /* Text_Hide_SeekTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* PassMethod_as_Props */ = {
+		13B07F861A680F5B00A75B9A /* Text_Hide_Seek */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "PassMethod_as_Props" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Text_Hide_Seek" */;
 			buildPhases = (
-				B5EA7CA99C9832F1D2D8C5FD /* [CP] Check Pods Manifest.lock */,
+				2DAD7ADBB2EBCE8BEEBFD3B5 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
@@ -234,16 +235,16 @@
 			);
 			dependencies = (
 			);
-			name = PassMethod_as_Props;
-			productName = PassMethod_as_Props;
-			productReference = 13B07F961A680F5B00A75B9A /* PassMethod_as_Props.app */;
+			name = Text_Hide_Seek;
+			productName = Text_Hide_Seek;
+			productReference = 13B07F961A680F5B00A75B9A /* Text_Hide_Seek.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E47A1E0B4A5D006451C7 /* PassMethod_as_Props-tvOS */ = {
+		2D02E47A1E0B4A5D006451C7 /* Text_Hide_Seek-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "PassMethod_as_Props-tvOS" */;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Text_Hide_Seek-tvOS" */;
 			buildPhases = (
-				AE4AE343001025D5AD84BD62 /* [CP] Check Pods Manifest.lock */,
+				BAB2E5DE6C9B8B62AC0D6EB7 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -254,16 +255,16 @@
 			);
 			dependencies = (
 			);
-			name = "PassMethod_as_Props-tvOS";
-			productName = "PassMethod_as_Props-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* PassMethod_as_Props-tvOS.app */;
+			name = "Text_Hide_Seek-tvOS";
+			productName = "Text_Hide_Seek-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* Text_Hide_Seek-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E48F1E0B4A5D006451C7 /* PassMethod_as_Props-tvOSTests */ = {
+		2D02E48F1E0B4A5D006451C7 /* Text_Hide_Seek-tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "PassMethod_as_Props-tvOSTests" */;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Text_Hide_Seek-tvOSTests" */;
 			buildPhases = (
-				154420E153C969FE5BA2A430 /* [CP] Check Pods Manifest.lock */,
+				8FC2F7D5DB6ED086D28055CE /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
@@ -273,9 +274,9 @@
 			dependencies = (
 				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
 			);
-			name = "PassMethod_as_Props-tvOSTests";
-			productName = "PassMethod_as_Props-tvOSTests";
-			productReference = 2D02E4901E0B4A5D006451C7 /* PassMethod_as_Props-tvOSTests.xctest */;
+			name = "Text_Hide_Seek-tvOSTests";
+			productName = "Text_Hide_Seek-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* Text_Hide_Seek-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -302,12 +303,11 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "PassMethod_as_Props" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Text_Hide_Seek" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
@@ -316,10 +316,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* PassMethod_as_Props */,
-				00E356ED1AD99517003FC87E /* PassMethod_as_PropsTests */,
-				2D02E47A1E0B4A5D006451C7 /* PassMethod_as_Props-tvOS */,
-				2D02E48F1E0B4A5D006451C7 /* PassMethod_as_Props-tvOSTests */,
+				13B07F861A680F5B00A75B9A /* Text_Hide_Seek */,
+				00E356ED1AD99517003FC87E /* Text_Hide_SeekTests */,
+				2D02E47A1E0B4A5D006451C7 /* Text_Hide_Seek-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* Text_Hide_Seek-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -373,28 +373,6 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		154420E153C969FE5BA2A430 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PassMethod_as_Props-tvOSTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -409,7 +387,7 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		5E35847F5119A401E92CB037 /* [CP] Check Pods Manifest.lock */ = {
+		2DAD7ADBB2EBCE8BEEBFD3B5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -424,14 +402,14 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PassMethod_as_PropsTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Text_Hide_Seek-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AE4AE343001025D5AD84BD62 /* [CP] Check Pods Manifest.lock */ = {
+		48C737103B24BA440F570AE2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -446,14 +424,14 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PassMethod_as_Props-tvOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Text_Hide_SeekTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B5EA7CA99C9832F1D2D8C5FD /* [CP] Check Pods Manifest.lock */ = {
+		8FC2F7D5DB6ED086D28055CE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -468,7 +446,29 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PassMethod_as_Props-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Text_Hide_Seek-tvOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAB2E5DE6C9B8B62AC0D6EB7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Text_Hide_Seek-tvOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -520,7 +520,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* PassMethod_as_PropsTests.m in Sources */,
+				00E356F31AD99517003FC87E /* Text_Hide_SeekTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,7 +546,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DCD954D1E0B4F2C00145EB5 /* PassMethod_as_PropsTests.m in Sources */,
+				2DCD954D1E0B4F2C00145EB5 /* Text_Hide_SeekTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,12 +555,12 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* PassMethod_as_Props */;
+			target = 13B07F861A680F5B00A75B9A /* Text_Hide_Seek */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D02E47A1E0B4A5D006451C7 /* PassMethod_as_Props-tvOS */;
+			target = 2D02E47A1E0B4A5D006451C7 /* Text_Hide_Seek-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -572,7 +572,7 @@
 				13B07FB21A68108700A75B9A /* Base */,
 			);
 			name = LaunchScreen.xib;
-			path = PassMethod_as_Props;
+			path = Text_Hide_Seek;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -580,14 +580,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9EE5ADB68EBA30DFC2055325 /* Pods-PassMethod_as_PropsTests.debug.xcconfig */;
+			baseConfigurationReference = 2681418B4E774CDCC33B3D30 /* Pods-Text_Hide_SeekTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = PassMethod_as_PropsTests/Info.plist;
+				INFOPLIST_FILE = Text_Hide_SeekTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -597,17 +597,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PassMethod_as_Props.app/PassMethod_as_Props";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Text_Hide_Seek.app/Text_Hide_Seek";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B065B6BD30E8F8DE95C4F189 /* Pods-PassMethod_as_PropsTests.release.xcconfig */;
+			baseConfigurationReference = 50626077DAD0E7B7FEF03D87 /* Pods-Text_Hide_SeekTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = PassMethod_as_PropsTests/Info.plist;
+				INFOPLIST_FILE = Text_Hide_SeekTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -617,19 +617,18 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PassMethod_as_Props.app/PassMethod_as_Props";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Text_Hide_Seek.app/Text_Hide_Seek";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B0B0181B73C5D4C81CEA2B61 /* Pods-PassMethod_as_Props.debug.xcconfig */;
+			baseConfigurationReference = 23EE6AF970E0A1BB64A12FC4 /* Pods-Text_Hide_Seek.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				INFOPLIST_FILE = PassMethod_as_Props/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				INFOPLIST_FILE = Text_Hide_Seek/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -637,19 +636,18 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = PassMethod_as_Props;
+				PRODUCT_NAME = Text_Hide_Seek;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA08A45BB203E37E57F80727 /* Pods-PassMethod_as_Props.release.xcconfig */;
+			baseConfigurationReference = 8634654CCB2742FDFF4308C5 /* Pods-Text_Hide_Seek.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = PassMethod_as_Props/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				INFOPLIST_FILE = Text_Hide_Seek/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -657,14 +655,14 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = PassMethod_as_Props;
+				PRODUCT_NAME = Text_Hide_Seek;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 61F1311492E9A7498D2DA484 /* Pods-PassMethod_as_Props-tvOS.debug.xcconfig */;
+			baseConfigurationReference = 7860DE77D7EC6CD4969B51EF /* Pods-Text_Hide_Seek-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -675,14 +673,14 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "PassMethod_as_Props-tvOS/Info.plist";
+				INFOPLIST_FILE = "Text_Hide_Seek-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.PassMethod_as_Props-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Text_Hide_Seek-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -692,7 +690,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 695C823EF5B60F5CE91ED0C0 /* Pods-PassMethod_as_Props-tvOS.release.xcconfig */;
+			baseConfigurationReference = 8A1FF17AD6E2FB124D02A566 /* Pods-Text_Hide_Seek-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -703,14 +701,14 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "PassMethod_as_Props-tvOS/Info.plist";
+				INFOPLIST_FILE = "Text_Hide_Seek-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.PassMethod_as_Props-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Text_Hide_Seek-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -720,7 +718,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7FEE175B5D60F57E0341C5F7 /* Pods-PassMethod_as_Props-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = 3199A857AEE1607481BF381B /* Pods-Text_Hide_Seek-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -730,24 +728,24 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "PassMethod_as_Props-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "Text_Hide_Seek-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.PassMethod_as_Props-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Text_Hide_Seek-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PassMethod_as_Props-tvOS.app/PassMethod_as_Props-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Text_Hide_Seek-tvOS.app/Text_Hide_Seek-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Debug;
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4F6E9DE0E2A051A94A7B4B2D /* Pods-PassMethod_as_Props-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = D14473BD61D1E362D1D642A6 /* Pods-Text_Hide_Seek-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -757,17 +755,17 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "PassMethod_as_Props-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "Text_Hide_Seek-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.PassMethod_as_Props-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Text_Hide_Seek-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PassMethod_as_Props-tvOS.app/PassMethod_as_Props-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Text_Hide_Seek-tvOS.app/Text_Hide_Seek-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Release;
@@ -874,7 +872,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "PassMethod_as_PropsTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "Text_Hide_SeekTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -883,7 +881,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "PassMethod_as_Props" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Text_Hide_Seek" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -892,7 +890,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "PassMethod_as_Props-tvOS" */ = {
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Text_Hide_Seek-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4971E0B4A5E006451C7 /* Debug */,
@@ -901,7 +899,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "PassMethod_as_Props-tvOSTests" */ = {
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Text_Hide_Seek-tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
@@ -910,7 +908,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "PassMethod_as_Props" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Text_Hide_Seek" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

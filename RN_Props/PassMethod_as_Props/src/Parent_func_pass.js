@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { View, Text, FlatList, StyleSheet } from 'react-native';
 
 import Child_func_pass from '../src/Child_func_pass'
-
 class Parent_func_pass extends Component {
   constructor(props) {
     super(props);
@@ -29,7 +28,7 @@ class Parent_func_pass extends Component {
   }
 
   render() {
-     
+
     console.warn("Parent rendred")
     return (
       <View style={{
@@ -42,26 +41,26 @@ class Parent_func_pass extends Component {
 
         <Text>Parent Component
           </Text>
-          <FlatList
-            data={this.state.people}
-            // contentContainerStyle={{ flex: 1, backgroundColor: "yellow" }}
-            // style={{ flex: 1, backgroundColor: "blue" }}
-            renderItem={({ item }) => {
-              return (
+        <FlatList
+          data={this.state.people}
+          // contentContainerStyle={{ flex: 1, backgroundColor: "yellow" }}
+          // style={{ flex: 1, backgroundColor: "blue" }}
+          renderItem={({ item }) => {
+            return (
               //   <View>
               // <Text>{item.name} </Text>
               // <Text>{item.age}</Text>
               // </View>
               <Child_func_pass
-              name={item.name}
-              age={item.age}
-              increment={this.increment} />
-    
-              )
-            }}
-          />
+                name={item.name}
+                age={item.age}
+                increment={this.increment} />
 
-       
+            )
+          }}
+        />
+
+
       </View>
     );
   }

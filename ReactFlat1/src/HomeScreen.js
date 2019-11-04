@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet,ScrollView,Button } from 'react-native';
+import { View, Text, StyleSheet,Image, ScrollView, Button } from 'react-native';
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 import Details from '../src/Details'
@@ -17,24 +17,51 @@ import { TouchableOpacity } from 'react-native-gesture-handler';
 //import ReactFlat11 from '../../../ReactNativePractice/src/ReactFlat11'
 
 class HomeScreen extends React.Component {
-    
+
     constructor(props) {
         super(props);
-
         console.log(this.props)
+        this.state={
+            username:'USN from Login Screen',
+            password:'PWD from Login Screen',
+            img_path:""
+        }
     }
     static navigationOptions = {
         title: 'Home',
-        headerBackTitle:"Go Back"
-       
-      };
+        headerBackTitle: "Go Back"
+    };
+    
+    updateValues=(userName, Password, path)=>{
+        console.warn(userName, Password, path);
+        this.setState({
+            username: userName,
+            password: Password,
+            img_path: path
+        })
+        
+    }
     render() {
         return (
             <View style={styles.Container}>
-                <Text style={styles.txt}>Home Screen</Text>
+                <View>
+                    <Image 
+                    style={styles.image}
+                    source={{uri:this.state.img_path}} />
+                    </View>
+                <View style={{flexDirection:'row',}}>
+                    <View>
+                        <Text>Username:</Text>
+                        <Text>Password :</Text>
+                        </View>
+                    <View>
+                <Text>{this.state.username}</Text>
+                <Text>{this.state.password} </Text>
+                </View>
+                </View>
 
                 {/* <View style={styles.child_Container}> */}
-                    <ScrollView>
+                <ScrollView>
                     <Button_Comp
                         title="Go to Detail"
                         call={() => this.props.navigation.navigate('Details')}
@@ -49,19 +76,19 @@ class HomeScreen extends React.Component {
                         call={() => this.props.navigation.navigate('Image_Multiple')}
                     />
 
-                     <Button_Comp
+                    <Button_Comp
                         title="API Page"
                         call={() => this.props.navigation.navigate('Api_page')}
                     />
-                     <Button_Comp
+                    <Button_Comp
                         title="Axios_Api"
                         call={() => this.props.navigation.navigate('Axios_Api')}
                     />
-                     <Button_Comp
+                    <Button_Comp
                         title="Post_Api"
                         call={() => this.props.navigation.navigate('Post_Api')}
                     />
-                     <Button_Comp
+                    <Button_Comp
                         title="Screen1"
                         call={() => this.props.navigation.navigate('Screen1')}
                     />
@@ -69,53 +96,57 @@ class HomeScreen extends React.Component {
                         title="Screen2"
                         call={() => this.props.navigation.navigate('Screen2')}
                     />
-                     <Button_Comp
+                    <Button_Comp
                         title="Select Image"
                         call={() => this.props.navigation.navigate('Select_Image')}
                     />
                     <Button_Comp
                         title="Log In"
-                        call={() => this.props.navigation.navigate('login')}
+                        call={() => this.props.navigation.navigate('login',{
+                            username:this.state.username,
+                            password:this.state.password,
+                            updateValues:this.updateValues
+                        })
+                    }
                     />
-
-               </ScrollView>
+                </ScrollView>
                 {/* </View> */}
 
             </View>
         );
     }
 }
+
 const AppNavigator = createStackNavigator(
     {
         Home: HomeScreen,
         Details: Details,
         Camera: Camera_Perm,
         Image_Multiple: Image_multi,
-        Api_page:ReactFlat11,
-        Axios_Api:ReacTTest,
-        Post_Api:Post_API,
-        Screen1:Screen_Assignment999,
-        Screen2:Screen_Assign3,
-        Select_Image:Image_Picker,
-        login:login_form
+        Api_page: ReactFlat11,
+        Axios_Api: ReacTTest,
+        Post_Api: Post_API,
+        Screen1: Screen_Assignment999,
+        Screen2: Screen_Assign3,
+        Select_Image: Image_Picker,
+        login: login_form
     },
     {
         initialRouteName: "Home",
-        defaultNavigationOptions:{
+        defaultNavigationOptions: {
             headerStyle: {
                 backgroundColor: '#f4511e',
-              },
-              headerTintColor: '#fff',
-              headerTitleStyle: {
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
                 fontWeight: 'bold',
-              },
-              headerRight:()=>(
-                  <TouchableOpacity style={{paddingRight: 10,}}
-                  onPress={()=>{alert("Please add")}}>
-                      <Text style={{fontSize:40}}>+</Text>                     
-  </TouchableOpacity>
-)
-
+            },
+            headerRight: () => (
+                <TouchableOpacity style={{ paddingRight: 10, }}
+                    onPress={() => { alert("Please add") }}>
+                    <Text style={{ fontSize: 40 }}>+</Text>
+                </TouchableOpacity>
+            )
         }
     }
 );
@@ -130,16 +161,23 @@ const styles = StyleSheet.create({
         backgroundColor: "grey",
         flex: 1,
         alignItems: "center",
-        justifyContent:"center"
+        justifyContent: "center"
     },
     txt: {
         fontSize: 20,
         fontWeight: "bold"
     },
     child_Container: {
-       // backgroundColor: "pink",
+        // backgroundColor: "pink",
         margin: 20,
-        flex:1
+        flex: 1
+    },
+    image:{
+        height:100,
+        width:100,
+        borderRadius:50,
+        backgroundColor:"pink",
+        marginTop:10,
+        marginBottom: 10,
     }
-
 })

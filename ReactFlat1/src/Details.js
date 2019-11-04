@@ -1,11 +1,9 @@
 import React,{Component} from 'react';
 import { View, Text,Button,StyleSheet,props } from 'react-native';
 
-
 class Details extends React.Component {
   static navigationOptions = {
     title: 'Details',
-   
   };
 
     render() {

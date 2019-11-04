@@ -36,7 +36,8 @@ class Image_picker extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <TouchableOpacity style={[{backgroundColor: 'red'}, styles.img]} onPress={this.handleTap} >
+                <TouchableOpacity style={[{backgroundColor: 'red'}, styles.img]}
+                 onPress={this.handleTap} >
                     <Image
                         style={styles.img}
                         source={{ uri: this.state.source }}

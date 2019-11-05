@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, TouchableOpacity, Image } from 'react-native';
+import { View, Text, TouchableOpacity,ActivityIndicator, Image } from 'react-native';
 //import ImagePicker from 'react-native-image-crop-picker';
 import myPicker from '../src/components/ImagePicker_reusable'
 import styles from '../src/css/styles'
@@ -11,12 +11,19 @@ class Uploads extends Component {
     super(props);
     this.state = {
       source: 'https://image.shutterstock.com/image-vector/upload-folder-icon-flat-illustration-600w-1425977081.jpg',
-
-      downloaded: 'https://image.shutterstock.com/image-vector/vector-icon-download-sign-inside-600w-116113897.jpg'
+      downloaded: 'https://image.shutterstock.com/image-vector/vector-icon-download-sign-inside-600w-116113897.jpg',
+      isLoaded:false
     };
   }
 
   Upload_file = () => {
+    if(this.state.source==='https://image.shutterstock.com/image-vector/upload-folder-icon-flat-illustration-600w-1425977081.jpg'){
+      alert("Can't upload an empty file");
+      return
+    }
+    this.setState({
+      isLoaded:true
+    })
     const file = {
       uri: "file://" + this.state.source,
       name: "image.png",
@@ -32,8 +39,10 @@ class Uploads extends Component {
       successActionStatus: 201
     }
 
-    RNS3.put(file, options).then(response => {
+    RNS3.put(file, options).progress((e)=>{console.warn(e.percent)})
+    .then(response => {
       if (response.status !== 201) {
+        console.warn("nothing to upload")
         throw new Error("Failed to upload image to S3");
       }
       else {
@@ -41,6 +50,7 @@ class Uploads extends Component {
         console.warn(response)
         // debugger
         this.setState({
+          isLoaded:false,
           downloaded: response.body.postResponse.location
         })
       }
@@ -72,10 +82,8 @@ class Uploads extends Component {
           <Text style={{ fontSize: 20 }}>Upload</Text>
         </TouchableOpacity>
         <Text style={{ fontSize: 20, marginBottom: 20, }}>Image downloaded from the Cloud: </Text>
-        <Image
-          style={styles.upload_img}
-          source={{ uri: this.state.downloaded }}
-        />
+        {this.state.isLoaded ? <ActivityIndicator/> : <Image style={styles.upload_img} source={{ uri: this.state.downloaded }}/> }
+       
       </View>
     );
   }

@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, } from 'react-native'
-
+import styles from '../src/css/styles'
 class Button_Comp extends Component {
     render() {
         return (
           //  <View>
-                <TouchableOpacity style={styles.bttn}
+                <TouchableOpacity style={styles.btn_bttn}
                     onPress={this.props.call} >
                     <Text
                     style={{
@@ -19,24 +19,5 @@ class Button_Comp extends Component {
 }
 
 export default Button_Comp;
-const styles = StyleSheet.create({
-    bttn: {
-        width: 290,
-        height: 40,
-        margin:20,
-        alignItems:"center",
-        justifyContent:"center",
-        backgroundColor:"orange",
-        shadowColor: "#000",
-shadowOffset: {
-	width: 0,
-	height: 2,
-},
-shadowOpacity: 0.25,
-shadowRadius: 3.84,
 
-elevation: 5,
-        borderRadius:10
-    }
-})
 

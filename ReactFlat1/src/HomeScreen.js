@@ -14,7 +14,9 @@ import Screen_Assign3 from '../src/Screen_Assign3'
 import Image_Picker from '../src/Image_Picker'
 import login_form from '../src/login_form'
 import { TouchableOpacity } from 'react-native-gesture-handler';
+import Uploads from './Uploads';
 //import ReactFlat11 from '../../../ReactNativePractice/src/ReactFlat11'
+import styles from '../src/css/styles'
 
 class HomeScreen extends React.Component {
 
@@ -42,10 +44,10 @@ class HomeScreen extends React.Component {
     }
     render() {
         return (
-            <View style={styles.Container}>
+            <View style={styles.h_Container}>
                 <View>
                     <Image 
-                    style={styles.image}
+                    style={styles.h_image}
                     source={{uri:this.state.img_path}} />
                     </View>
                 <View style={{flexDirection:'row',}}>
@@ -108,6 +110,11 @@ class HomeScreen extends React.Component {
                         })
                     }
                     />
+
+                    <Button_Comp
+                        title="Upload Image"
+                        call={() => this.props.navigation.navigate('Upload_File')}
+                    />
                 </ScrollView>
     
             </View>
@@ -126,7 +133,9 @@ const AppNavigator = createStackNavigator(
         Screen1: Screen_Assignment999,
         Screen2: Screen_Assign3,
         Select_Image: Image_Picker,
-        login: login_form
+        login: login_form,
+        Upload_File:Uploads
+
     },
     {
         initialRouteName: "Home",
@@ -153,36 +162,3 @@ export default class App extends React.Component {
         return <AppContainer />;
     }
 }
-const styles = StyleSheet.create({
-    Container: {
-        backgroundColor: "grey",
-        flex: 1,
-        alignItems: "center",
-        justifyContent: "center"
-    },
-    txt: {
-        fontSize: 20,
-        fontWeight: "bold"
-    },
-    child_Container: {
-        // backgroundColor: "pink",
-        margin: 20,
-        flex: 1
-    },
-    image:{
-        height:100,
-        width:100,
-        borderRadius:50,
-        backgroundColor:"pink",
-        marginTop:10,
-        marginBottom: 10,
-        shadowColor: "#000",
-        shadowOffset: {
-            width: 0,
-            height: 2,
-        },
-        shadowOpacity: 0.25,
-        shadowRadius: 3.84,
-        elevation: 5,
-    }
-})

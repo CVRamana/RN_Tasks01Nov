@@ -34,13 +34,10 @@ function Item({ desc, title, url1 }) {
           <Text 
                 style={{width:190}}
             >{desc}</Text>
-           
-            
-
+          
         </View>
       </View>
     </View>
-    
   );
 }
 
@@ -55,7 +52,6 @@ export default class ReacTTest extends React.Component {
      
     };
   };
-
 
 //Getting the data from PI on button click
   getData = () => {

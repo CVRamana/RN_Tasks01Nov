@@ -1,18 +1,14 @@
 import React, { Component } from 'react';
 import {
-    View, Text, Image,
+    View, Image,
     StyleSheet,
     TouchableOpacity
-}
-    from 'react-native'
-
+      } from 'react-native'
 import ImagePicker from 'react-native-image-crop-picker';
-
 class Image_picker extends Component {
     static navigationOptions = {
         title: 'Pick 1 Image',
       };
-    
     constructor(props) {
         super(props)
         this.state = {
@@ -32,7 +28,6 @@ class Image_picker extends Component {
             })
           });
     }
-
     render() {
         return (
             <View style={styles.container}>
@@ -61,5 +56,4 @@ const styles = StyleSheet.create({
         alignItems: "center",
         flex: 1,
     }
-
 })

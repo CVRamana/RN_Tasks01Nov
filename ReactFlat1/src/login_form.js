@@ -23,8 +23,8 @@ class login_form extends Component {
         const { params } = this.props.navigation.state;
         const username = params ? params.name : null;
         const password = params ? params.password : null;
-        console.warn(username)
-        console.warn(password)
+        //console.warn(username)
+        //console.warn(password)
         //console.warn(this.state.username)
         return (
             <View style={styles.parent}>
@@ -42,6 +42,7 @@ class login_form extends Component {
                             })
                         });
                     }}>
+
                     <Image
                         style={styles.img}
                         source={{ uri: this.state.source }} />
@@ -56,12 +57,12 @@ class login_form extends Component {
                     value={this.state.username}
                     onChangeText={(text)=> this.setState({ username: text })} />
 
-
                 <TextInput style={styles.text}
                     ref={(input) => { this.secondTextInput = input; }}
                     placeholder="secondTextInput"
                     value={this.state.password}
                     onChangeText={(text) => this.setState({ password: text })} />
+
                 <View style={{ flexDirection: "row" }}>
                     <TouchableOpacity
                         style={styles.byyn}
@@ -71,6 +72,7 @@ class login_form extends Component {
                                 password: this.state.password
                             })
                         }} >
+
                         <Text style={{ fontSize: 20, color: "white" }}>Login</Text>
                     </TouchableOpacity>
                     <TouchableOpacity
@@ -83,7 +85,7 @@ class login_form extends Component {
                         }} >
                         <Text style={{ fontSize: 20, color: "white" }}>Edit</Text>
                     </TouchableOpacity>
-
+                    
                     <TouchableOpacity
                         style={styles.byyn}
                         onPress={() => {
@@ -131,7 +133,7 @@ const styles = StyleSheet.create({
         },
         shadowOpacity: 0.25,
         shadowRadius: 3.84,
-        elevation: 5,
+      //  elevation: 5,
     },
     byyn: {
         backgroundColor: "blue",

@@ -197,16 +197,13 @@ const styles = StyleSheet.create({
     },
     conatainer1: {
         flex: .3,
-        // justifyContent:"center",
-        // alignItems:"center",
+       
         backgroundColor: "white"
 
     },
     conatainer2: {
         flex: .2,
-        // justifyContent:"center",
-        // alignItems:"center",
-        //  backgroundColor: "blue"
+        
     },
     conatainer2a: {
         flex: 1,
@@ -297,9 +294,6 @@ const styles = StyleSheet.create({
     },
     conatainer3: {
         flex: .4,
-        // justifyContent:"center",
-        // alignItems:"center",
-        // backgroundColor: "red"
     },
     conatainer3A: {
         flex: .3,
@@ -312,8 +306,6 @@ const styles = StyleSheet.create({
 
     conatainer4: {
         flex: .07,
-        // justifyContent:"center",
-        // alignItems:"center",
         flexDirection: "row",
         //  backgroundColor: "green"
     },

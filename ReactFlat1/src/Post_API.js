@@ -23,15 +23,19 @@ getToken = ()=>{
     'password':'raman123'  
 })
 .then((response)=>{
+
 console.warn(response)
+
 this.setState({
     authToken:response.data.data
 })
 
 })
+
 .catch((err)=>{
     console.log(err)
 })
+
 }
 
 getData=()=>{
@@ -45,7 +49,6 @@ getData=()=>{
         let src=response.data.data.profile_pic
         //setting the given url
         this.setState({urlImg:src})
-
         console.warn(response)
         console.warn(src)
     })

@@ -5,7 +5,8 @@ import {
   TouchableOpacity,
   FlatList,Button
 } from 'react-native'
-import ImagePicker from 'react-native-image-crop-picker';
+
+import myPicker from '../src/components/ImagePicker_reusable'
 export default class Image_multi extends Component {
   static navigationOptions = {
     title: 'Gallery',
@@ -16,28 +17,15 @@ export default class Image_multi extends Component {
     super(props)
     this.state = {
       source: [],
-      //images: null
     };
   };
 
   pickMultiple() {
-    ImagePicker.openPicker({
-      multiple: true,
-      waitAnimationEnd: false,
-      includeExif: true,
-      forceJpg: true,
-    }).then(images => {
-      let temp=[]
-      images.forEach((item)=>{
-        let myImage={
-          uri:item.path
-        }
-        temp.push(myImage)
-      })
-      this.setState({
-      source:temp
-      });
-    }).catch(e => alert(e));
+  myPicker.getMultiPick((response)=>{
+    this.setState({
+      source:response
+    })
+  })
   }
   render() {
     console.log(this.state.source.path)
@@ -82,16 +70,20 @@ const styles = StyleSheet.create({
     paddingTop: 40,
   },
   bttn: {
-    backgroundColor: "yellow",
+    backgroundColor: "orange",
     width: 200,
-    height: 200,
-    backgroundColor: "red"
+    height: 50,
+    borderRadius:25,
+    justifyContent: 'center',
+    alignItems: 'center',
+  
   },
   img: {
     width: 100,
-    height: 100,
+    height: 50,
+    borderRadius:25,
     backgroundColor:"blue",
-    margin:15,
+    margin:9,
     shadowColor: "#000",
         shadowOffset: {
             width: 0,

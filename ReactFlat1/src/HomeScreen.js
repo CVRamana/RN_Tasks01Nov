@@ -22,8 +22,8 @@ class HomeScreen extends React.Component {
         super(props);
         console.log(this.props)
         this.state={
-            username:'USN from Login Screen',
-            password:'PWD from Login Screen',
+            username:'USN',
+            password:'PWD',
             img_path:""
         }
     }
@@ -38,8 +38,7 @@ class HomeScreen extends React.Component {
             username: userName,
             password: Password,
             img_path: path
-        })
-        
+        })   
     }
     render() {
         return (
@@ -110,13 +109,11 @@ class HomeScreen extends React.Component {
                     }
                     />
                 </ScrollView>
-                {/* </View> */}
-
+    
             </View>
         );
     }
 }
-
 const AppNavigator = createStackNavigator(
     {
         Home: HomeScreen,
@@ -179,5 +176,13 @@ const styles = StyleSheet.create({
         backgroundColor:"pink",
         marginTop:10,
         marginBottom: 10,
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 2,
+        },
+        shadowOpacity: 0.25,
+        shadowRadius: 3.84,
+        elevation: 5,
     }
 })

@@ -48,11 +48,18 @@ class login_form extends Component {
                     <Text>Choose Photo</Text>
                 </TouchableOpacity>
                 <TextInput style={styles.text}
-                    placeholder="Enter your name"
+
+                    placeholder="name"
+                    returnKeyType={"next"}
+                    onSubmitEditing={() => { this.secondTextInput.focus(); }}
+                    blurOnSubmit={false}
                     value={this.state.username}
-                    onChangeText={(text) => this.setState({ username: text })} />
+                    onChangeText={(text)=> this.setState({ username: text })} />
+
+
                 <TextInput style={styles.text}
-                    placeholder="Enter your password"
+                    ref={(input) => { this.secondTextInput = input; }}
+                    placeholder="secondTextInput"
                     value={this.state.password}
                     onChangeText={(text) => this.setState({ password: text })} />
                 <View style={{ flexDirection: "row" }}>
@@ -124,7 +131,7 @@ const styles = StyleSheet.create({
         },
         shadowOpacity: 0.25,
         shadowRadius: 3.84,
-        //elevation: 5,
+        elevation: 5,
     },
     byyn: {
         backgroundColor: "blue",

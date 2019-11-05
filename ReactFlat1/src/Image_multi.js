@@ -16,7 +16,7 @@ export default class Image_multi extends Component {
     super(props)
     this.state = {
       source: [],
-      images: null
+      //images: null
     };
   };
 
@@ -27,17 +27,15 @@ export default class Image_multi extends Component {
       includeExif: true,
       forceJpg: true,
     }).then(images => {
+      let temp=[]
+      images.forEach((item)=>{
+        let myImage={
+          uri:item.path
+        }
+        temp.push(myImage)
+      })
       this.setState({
-        image: null,
-        images: images.map(i => {
-          console.warn('received image', i.path);
-          return {
-            uri: i.path,
-            width: i.width,
-            height: i.height,
-            mime: i.mime
-          };
-        })
+      source:temp
       });
     }).catch(e => alert(e));
   }
@@ -57,15 +55,17 @@ export default class Image_multi extends Component {
           onPress={() => this.props.navigation.goBack()}
         />
         </View>
-        <View style={{height:200,marginTop:10,backgroundColor:"pink"}}>
+        <View style={{backgroundColor:"pink",
+        padding:10,
+        }}>
           <FlatList
-          //  style={{ backgroundColor: 'green' }}
+          numColumns={3}
             data={this.state.source}
             renderItem={ ({ item }) => { 
-              <Text>{item.uri}</Text>
-            {/* // <Image style={styles.img}
-            //       source={{ uri: item.uri }}
-            //     />  */}
+              return (
+              <Image style={styles.img}
+                 source={{ uri: item.uri }}
+              />  )
                 }
             }
             keyExtractor={(item)=>item.uri} />
@@ -89,9 +89,18 @@ const styles = StyleSheet.create({
   },
   img: {
     width: 100,
-    height: 100
+    height: 100,
+    backgroundColor:"blue",
+    margin:15,
+    shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 2,
+        },
+        shadowOpacity: 0.25,
+        shadowRadius: 3.84,
+        elevation: 22,
   },
   flat: {
-
   }
 })

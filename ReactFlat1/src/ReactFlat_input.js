@@ -17,7 +17,7 @@ class ReactFlat_input extends Component {
                 onChangeText={(val)=> this.props.search(val)}/>
                 <TouchableOpacity style={styles.bttn}
                     onPress={()=>this.props.handleSearch()}>
-                    <Text style={{ fontSize: 30, color: "green" }}>Go</Text>
+                    <Text style={{fontSize:30, color:"green"}}>Go</Text>
                 </TouchableOpacity>
             </View>
         );
@@ -35,19 +35,19 @@ const styles = StyleSheet.create({
         paddingLeft: 10,
         flexDirection: "row"
     },
+    
     input: {
         backgroundColor: "white",
         width: 240,
         height: 40,
         borderRadius: 20,
         paddingLeft: 20
-
     },
+
     bttn: {
         backgroundColor: "pink",
         borderRadius: 10,
         marginLeft: 10,
-
     }
 
 })

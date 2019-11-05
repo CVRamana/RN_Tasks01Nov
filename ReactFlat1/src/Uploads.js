@@ -10,9 +10,9 @@ class Uploads extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      source:'https://image.shutterstock.com/image-vector/upload-folder-icon-flat-illustration-600w-1425977081.jpg',
-      
-      downloaded:'https://image.shutterstock.com/image-vector/vector-icon-download-sign-inside-600w-116113897.jpg'
+      source: 'https://image.shutterstock.com/image-vector/upload-folder-icon-flat-illustration-600w-1425977081.jpg',
+
+      downloaded: 'https://image.shutterstock.com/image-vector/vector-icon-download-sign-inside-600w-116113897.jpg'
     };
   }
 

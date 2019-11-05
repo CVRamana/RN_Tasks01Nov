@@ -5,14 +5,15 @@ import {
     TouchableOpacity
 } from 'react-native'
 //import Details from '../src/Details'
-import ImagePicker from 'react-native-image-crop-picker';
+import mypicker from '../src/components/ImagePicker_reusable'
+//import ImagePicker from 'react-native-image-crop-picker';
 class login_form extends Component {
     constructor(props) {
         super(props)
         this.state = {
             username: this.props.navigation.state.params.username,
             password: this.props.navigation.state.params.password,
-            source: ""
+            source: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuczNR-4ySIBWkVQ2g109PwUnm51l8gUXZDf8CMk87z21KtpEk&s"
         };
     };
     static navigationOptions = {
@@ -31,16 +32,11 @@ class login_form extends Component {
                 <TouchableOpacity
                     style={styles.img}
                     onPress={() => {
-                        ImagePicker.openPicker({
-                            height: 40,
-                            width: 50,
-                            cropping: true
-                        }).then(image => {
-                            console.log(image);
+                        mypicker.getOnePick((response)=>{
                             this.setState({
-                                source: image.path
+                            source:response
                             })
-                        });
+                        })
                     }}>
 
                     <Image

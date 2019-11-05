@@ -4,7 +4,9 @@ import {
     StyleSheet,
     TouchableOpacity
       } from 'react-native'
+      import myPicker from '../src/components/ImagePicker_reusable'
 import ImagePicker from 'react-native-image-crop-picker';
+import mypicker from '../src/components/ImagePicker_reusable';
 class Image_picker extends Component {
     static navigationOptions = {
         title: 'Pick 1 Image',
@@ -17,16 +19,11 @@ class Image_picker extends Component {
     };
 
     handleTap = () => {
-        ImagePicker.openPicker({
-            height:40,
-            width:50,
-            cropping: true
-          }).then(image => {
-            console.log(image);
+        mypicker.getOnePick((responce)=>{
             this.setState({
-                source:image.path
+               source:responce
             })
-          });
+        })
     }
     render() {
         return (

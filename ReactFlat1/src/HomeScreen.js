@@ -15,6 +15,7 @@ import Image_Picker from '../src/Image_Picker'
 import login_form from '../src/login_form'
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import Uploads from './Uploads';
+import I18n from '../src/utils/i18n'
 //import ReactFlat11 from '../../../ReactNativePractice/src/ReactFlat11'
 import styles from '../src/css/styles'
 
@@ -26,7 +27,7 @@ class HomeScreen extends React.Component {
         this.state={
             username:'USN',
             password:'PWD',
-            img_path:""
+            img_path:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6AMD3JOvBY-Q_3u4H2HtZ-hqegF61NXhhe4baeDdBOetyV6hy&s"
         }
     }
     static navigationOptions = {
@@ -52,12 +53,13 @@ class HomeScreen extends React.Component {
                     </View>
                 <View style={{flexDirection:'row',}}>
                     <View>
-                        <Text>Username:</Text>
-                        <Text>Password :</Text>
+                        <Text style={styles.h_userText}>Username:</Text>
+                        <Text style={styles.h_userText}>Password :</Text>
+                        <Text>{I18n.t("hello")}</Text>
                         </View>
                     <View>
-                <Text>{this.state.username}</Text>
-                <Text>{this.state.password} </Text>
+                <Text style={styles.h_userText}>{this.state.username}</Text>
+                <Text style={styles.h_userText}>{this.state.password} </Text>
                 </View>
                 </View>
 

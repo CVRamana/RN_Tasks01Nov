@@ -16,8 +16,14 @@ import login_form from '../src/login_form'
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import Uploads from './Uploads';
 import I18n from '../src/utils/i18n'
+import Async_Storage from '../src/Asynch_Storage'
 //import ReactFlat11 from '../../../ReactNativePractice/src/ReactFlat11'
 import styles from '../src/css/styles'
+import SignUp from '../src/SignUp'
+ import login1 from '../src/login'
+import Dashboard from '../src/Dashboard'
+
+
 
 class HomeScreen extends React.Component {
 
@@ -117,6 +123,11 @@ class HomeScreen extends React.Component {
                         title="Upload Image"
                         call={() => this.props.navigation.navigate('Upload_File')}
                     />
+
+                     <Button_Comp
+                        title="Asynch_Storage"
+                        call={() => this.props.navigation.navigate('Async')}
+                    />
                 </ScrollView>
     
             </View>
@@ -136,8 +147,12 @@ const AppNavigator = createStackNavigator(
         Screen2: Screen_Assign3,
         Select_Image: Image_Picker,
         login: login_form,
-        Upload_File:Uploads
-
+        Upload_File:Uploads,
+        Async:Async_Storage,
+        SignUp:SignUp,
+       login_async:login1,
+        Dashboard:Dashboard,
+       
     },
     {
         initialRouteName: "Home",

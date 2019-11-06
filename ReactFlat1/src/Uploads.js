@@ -3,8 +3,8 @@ import { View, Text, TouchableOpacity,ActivityIndicator, Image } from 'react-nat
 //import ImagePicker from 'react-native-image-crop-picker';
 import myPicker from '../src/components/ImagePicker_reusable'
 import styles from '../src/css/styles'
-
 import { RNS3 } from 'react-native-aws3';
+
 
 class Uploads extends Component {
   constructor(props) {
@@ -22,7 +22,8 @@ class Uploads extends Component {
       return
     }
     this.setState({
-      isLoaded:true
+      isLoaded:true,
+      progress:0
     })
     const file = {
       uri: "file://" + this.state.source,
@@ -39,7 +40,11 @@ class Uploads extends Component {
       successActionStatus: 201
     }
 
-    RNS3.put(file, options).progress((e)=>{console.warn(e.percent)})
+    RNS3.put(file, options).progress((e)=>{
+      //console.warn(e.percent)
+      this.setState({progress:e})
+
+    })
     .then(response => {
       if (response.status !== 201) {
         console.warn("nothing to upload")
@@ -51,7 +56,7 @@ class Uploads extends Component {
         // debugger
         this.setState({
           isLoaded:false,
-          downloaded: response.body.postResponse.location
+          downloaded:response.body.postResponse.location
         })
       }
     });
@@ -82,7 +87,15 @@ class Uploads extends Component {
           <Text style={{ fontSize: 20 }}>Upload</Text>
         </TouchableOpacity>
         <Text style={{ fontSize: 20, marginBottom: 20, }}>Image downloaded from the Cloud: </Text>
-        {this.state.isLoaded ? <ActivityIndicator/> : <Image style={styles.upload_img} source={{ uri: this.state.downloaded }}/> }
+        {this.state.isLoaded ? <View><ActivityIndicator  
+        style={{ marginTop:40,
+        borderRadius:10}}
+        /><Text>{this.state.progress}</Text>
+        </View>
+        : <Image 
+        style={styles.upload_img} 
+        source={{ uri: this.state.downloaded }} 
+        /> }
        
       </View>
     );

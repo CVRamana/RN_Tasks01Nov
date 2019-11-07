@@ -18,12 +18,7 @@ class login extends Component {
   
   //Storing in the Async
   storeData = async () => {
-    // if(this.state.Fname==='' && 
-    // this.state.Lname==='' && this.state.Age==='' && this.state.City==='' &&
-    //  this.state.College===''){
-    //  alert("Plaese fill all the fields ")
-    //  return
-    // }
+   
     try {
       await AsyncStorage.multiSet([
         ['emailId',this.state.log_email],

@@ -24,8 +24,8 @@ import SignUp from '../src/SignUp'
 import Dashboard from '../src/Dashboard'
 import Dashboard_g from '../src/Dashboard_g'
 import GoogleSignin11 from './GoogleSignin11'
-
-
+import { GoogleSignin, GoogleSigninButton, statusCodes } from '@react-native-community/google-signin';
+import AsyncStorage from '@react-native-community/async-storage';
 
 class HomeScreen extends React.Component {
 
@@ -35,6 +35,7 @@ class HomeScreen extends React.Component {
         this.state={
             username:'USN',
             password:'PWD',
+            gmail:'',
             img_path:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6AMD3JOvBY-Q_3u4H2HtZ-hqegF61NXhhe4baeDdBOetyV6hy&s"
         }
     }
@@ -51,7 +52,15 @@ class HomeScreen extends React.Component {
             img_path: path
         })   
     }
+componentDidMount(){
+    AsyncStorage.getItem('email', (err, result) => {
+        console.log("result",result)
+        this.setState({gmail: result})})
+       
+}
+
     render() {
+        console.log("sdfsdf")
         return (
             <View style={styles.h_Container}>
                 <View>
@@ -133,8 +142,16 @@ class HomeScreen extends React.Component {
 
                     <Button_Comp
                         title="Google"
-                        call={() => this.props.navigation.navigate('Google')}
+                        call={() => {
+
+                            if(this.state.gmail !== null){
+                                this.props.navigation.navigate('Dashboard_g')
+                            }else{
+                                this.props.navigation.navigate('Google')
+                            }
+                        }}
                     />
+
                 </ScrollView>
     
             </View>

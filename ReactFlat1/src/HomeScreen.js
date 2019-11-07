@@ -22,6 +22,8 @@ import styles from '../src/css/styles'
 import SignUp from '../src/SignUp'
  import login1 from '../src/login'
 import Dashboard from '../src/Dashboard'
+import Dashboard_g from '../src/Dashboard_g'
+import GoogleSignin11 from './GoogleSignin11'
 
 
 
@@ -128,6 +130,11 @@ class HomeScreen extends React.Component {
                         title="Asynch_Storage"
                         call={() => this.props.navigation.navigate('Async')}
                     />
+
+                    <Button_Comp
+                        title="Google"
+                        call={() => this.props.navigation.navigate('Google')}
+                    />
                 </ScrollView>
     
             </View>
@@ -152,6 +159,8 @@ const AppNavigator = createStackNavigator(
         SignUp:SignUp,
        login_async:login1,
         Dashboard:Dashboard,
+        Google:GoogleSignin11,
+        Dashboard_g:Dashboard_g,
        
     },
     {

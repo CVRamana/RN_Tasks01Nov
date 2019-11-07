@@ -19,6 +19,12 @@
 		57DA9B810A0FEA51A53CFCB1 /* libPods-ReactFlat1Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D3172172BAA5CCF57DF49A7 /* libPods-ReactFlat1Tests.a */; };
 		5CBB192263B9DFCF99B45BA9 /* libPods-ReactFlat1-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CB9E1C480F81A40F4021352 /* libPods-ReactFlat1-tvOS.a */; };
 		689A678F689E496F0E0BC96B /* libPods-ReactFlat1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 719B3FB13E81AA67C8392390 /* libPods-ReactFlat1.a */; };
+		84195F3F2373E1300091DB9A /* libRNGoogleSignin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84195F3E2373E1300091DB9A /* libRNGoogleSignin.a */; };
+		84195F412373E1470091DB9A /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84195F402373E1460091DB9A /* AddressBook.framework */; };
+		84195F432373E1570091DB9A /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84195F422373E1570091DB9A /* SafariServices.framework */; };
+		84195F452373E1740091DB9A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84195F442373E1740091DB9A /* SystemConfiguration.framework */; };
+		84195F472373E18A0091DB9A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 84195F462373E18A0091DB9A /* libz.tbd */; };
+		84195F4B2373E39E0091DB9A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84195F4A2373E39E0091DB9A /* GoogleService-Info.plist */; };
 		D29C023FF6654530871D0AA1 /* libPods-ReactFlat1-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E14E934D4B94037BE5E247 /* libPods-ReactFlat1-tvOSTests.a */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +66,13 @@
 		6F856CEE9471C47682996A1B /* Pods-ReactFlat1-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactFlat1-tvOS.release.xcconfig"; path = "Target Support Files/Pods-ReactFlat1-tvOS/Pods-ReactFlat1-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		7022883FFAD633DC45D2A6A6 /* Pods-ReactFlat1Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactFlat1Tests.debug.xcconfig"; path = "Target Support Files/Pods-ReactFlat1Tests/Pods-ReactFlat1Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		719B3FB13E81AA67C8392390 /* libPods-ReactFlat1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactFlat1.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84195F3E2373E1300091DB9A /* libRNGoogleSignin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRNGoogleSignin.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		84195F402373E1460091DB9A /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		84195F422373E1570091DB9A /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		84195F442373E1740091DB9A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		84195F462373E18A0091DB9A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		84195F482373E1E00091DB9A /* libRNGoogleSignin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRNGoogleSignin.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		84195F4A2373E39E0091DB9A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		94252CE84F0B75997FF8A9DD /* Pods-ReactFlat1-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactFlat1-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-ReactFlat1-tvOSTests/Pods-ReactFlat1-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B47CF0D1CD20EC97E18066FF /* Pods-ReactFlat1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactFlat1Tests.release.xcconfig"; path = "Target Support Files/Pods-ReactFlat1Tests/Pods-ReactFlat1Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B8E14E934D4B94037BE5E247 /* libPods-ReactFlat1-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactFlat1-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +95,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84195F472373E18A0091DB9A /* libz.tbd in Frameworks */,
+				84195F452373E1740091DB9A /* SystemConfiguration.framework in Frameworks */,
+				84195F432373E1570091DB9A /* SafariServices.framework in Frameworks */,
+				84195F412373E1470091DB9A /* AddressBook.framework in Frameworks */,
+				84195F3F2373E1300091DB9A /* libRNGoogleSignin.a in Frameworks */,
 				689A678F689E496F0E0BC96B /* libPods-ReactFlat1.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -130,6 +148,7 @@
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
+				84195F4A2373E39E0091DB9A /* GoogleService-Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
@@ -139,6 +158,12 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84195F482373E1E00091DB9A /* libRNGoogleSignin.a */,
+				84195F462373E18A0091DB9A /* libz.tbd */,
+				84195F442373E1740091DB9A /* SystemConfiguration.framework */,
+				84195F422373E1570091DB9A /* SafariServices.framework */,
+				84195F402373E1460091DB9A /* AddressBook.framework */,
+				84195F3E2373E1300091DB9A /* libRNGoogleSignin.a */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
 				719B3FB13E81AA67C8392390 /* libPods-ReactFlat1.a */,
@@ -194,7 +219,6 @@
 				7022883FFAD633DC45D2A6A6 /* Pods-ReactFlat1Tests.debug.xcconfig */,
 				B47CF0D1CD20EC97E18066FF /* Pods-ReactFlat1Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -309,6 +333,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -339,6 +364,7 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				84195F4B2373E39E0091DB9A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,11 +509,13 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ReactFlat1/Pods-ReactFlat1-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/QBImagePickerController/QBImagePicker.bundle",
 				"${PODS_ROOT}/RSKImageCropper/RSKImageCropper/RSKImageCropperStrings.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/QBImagePicker.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RSKImageCropperStrings.bundle",
 			);

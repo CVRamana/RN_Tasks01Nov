@@ -26,9 +26,7 @@ class Parent_func_pass extends Component {
       people: ppl
     })
   }
-
   render() {
-
     console.warn("Parent rendred")
     return (
       <View style={{
@@ -47,27 +45,19 @@ class Parent_func_pass extends Component {
           // style={{ flex: 1, backgroundColor: "blue" }}
           renderItem={({ item }) => {
             return (
-              //   <View>
-              // <Text>{item.name} </Text>
-              // <Text>{item.age}</Text>
-              // </View>
               <Child_func_pass
                 name={item.name}
                 age={item.age}
                 increment={this.increment} />
-
             )
           }}
         />
-
-
       </View>
     );
   }
 }
-
 export default Parent_func_pass;
-const srtyles = StyleSheet.create({
+const styles = StyleSheet.create({
   parent: {
     paddingTop: 50,
   }

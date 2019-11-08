@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key> FacebookAppID </key>
+	<string>fb1932669983545547</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
@@ -30,11 +32,32 @@
 				<string>com.googleusercontent.apps.652275210210-n4hpr3qnlab11v3ffd163svfoq4o529c</string>
 			</array>
 		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb1932669983545547</string>
+			</array>
+		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>Facebook Display Name</key>
+	<string>My RN fb</string>
+	<key>FacebookAppID</key>
+	<string>1932669983545547</string>
+	<key>FacebookDisplayName</key>
+	<string>ReactNativeSignin</string>
 	<key>LSApplicationCategoryType</key>
 	<string></string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbapi</string>
+		<string>fb-messenger-share-api</string>
+		<string>fbauth2</string>
+		<string>fbshareextension</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
@@ -70,5 +93,14 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>URL Types</key>
+	<array>
+		<dict>
+			<key> item 0</key>
+			<string>fb1932669983545547</string>
+			<key>URL Schemes</key>
+			<array/>
+		</dict>
+	</array>
 </dict>
 </plist>

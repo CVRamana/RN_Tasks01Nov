@@ -41,9 +41,11 @@ clearData = async () => {
 //Sign Out
 signOut = async () => {
     try {
-      await GoogleSignin.revokeAccess();
+      // await GoogleSignin.revokeAccess();
+      
       await GoogleSignin.signOut();
-      this.setState({ user: null }); // Remember to remove the user from your app's state as well
+      // this.setState({ user: null }); // Remember to remove the user from your app's state as well
+      this.props.navigation.navigate("Google");
     } catch (error) {
       console.error(error);
     }
@@ -97,6 +99,9 @@ getData = async () => {
         <Button_Comp
         title="Clear Data"
         call={this.clearData}/>
+        <Button_Comp
+        title="Logout"
+        call={this.signOut}/>
         {/* <Text>{this.state.name}</Text>
         <Text>{this.state.Email}</Text>
         <Text>{this.state.url}</Text> */}

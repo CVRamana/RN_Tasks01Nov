@@ -32,6 +32,7 @@ class HomeScreen extends React.Component {
     constructor(props) {
         super(props);
         console.log(this.props)
+        console.log("Current user",GoogleSignin.getCurrentUser());
         this.state={
             username:'USN',
             password:'PWD',
@@ -143,7 +144,6 @@ componentDidMount(){
                     <Button_Comp
                         title="Google"
                         call={() => {
-
                             if(this.state.gmail !== null){
                                 this.props.navigation.navigate('Dashboard_g')
                             }else{

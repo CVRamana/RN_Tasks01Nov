@@ -74,7 +74,7 @@ class GoogleSignin11 extends Component {
           onPress={this.signIn}
           disabled={this.state.isSigninInProgress} />
 
-    {this.state.isAct ? <ActivityIndicator size="large" color="green" /> : null}
+          {this.state.isAct ? <ActivityIndicator size="large" color="green" /> : null}
 
       </View>
     );

@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import { View, Text,StyleSheet } from 'react-native';
+import { View, Text,StyleSheet,Button } from 'react-native';
 import { LoginButton, AccessToken } from 'react-native-fbsdk';
 import { LoginManager } from "react-native-fbsdk";
+import firebase from 'react-native-firebase'
+import { GoogleSignin, GoogleSigninButton, statusCodes } from '@react-native-community/google-signin';
 
 class Facebook11 extends Component {
   constructor(props) {
@@ -13,54 +15,68 @@ class Facebook11 extends Component {
     };
   }
 
+//config the google sign in 
+
+componentDidMount(){
+  GoogleSignin.configure({
+    iosClientId:'652275210210-n4hpr3qnlab11v3ffd163svfoq4o529c.apps.googleusercontent.com',//only for ios
+  })
+//   .then(()=>{
+//     console.log("fgdghsf")
+// // call the currentUserAsync() 
+//   })
+}
+
+
+
+// Facebook login Action
+onLoginFacebook=()=>{
+  LoginManager.logInWithPermissions(["public_profile","email"])
+  .then((result)=> {
+      if (result.isCancelled) {
+        console.log("Login cancelled");
+      } 
+        console.log(result)
+        console.log( "Login success with permissions"+result.grantedPermissions.toString() )
+        return AccessToken.getCurrentAccessToken()
+    }, )
+
+  .then(data=>{
+const credentials=firebase.auth.FacebookAuthProvider.credential(data.accessToken)
+return firebase.auth().signInWithCredential(credentials)
+  })
+  .then(currentUser=>{
+console.log("Facebook login with the user : ",JSON.stringify(currentUser))
+  })
+  .catch(err=>{
+    console.log(err)
+  })
+
+}
+
+// Google Login Action
+onLoginGoogle=()=>{
+  GoogleSignin
+  .signIn()
+  .then((data)=>{
+    const credentials=firebase.auth.GoogleAuthProvider.credential(data.idToken,data.accessToken)
+    return firebase.auth().signInWithCredential(credentials)
+  })
+  .then((currentUser)=>{
+console.log("Current user with the credential : ",JSON.stringify(currentUser))
+  })
+  .catch((err)=>{
+    console.log("Google login failed with error : ",err)
+  })
+
+}
+
+
   render() {
     return (
       <View style={styles.parent}>
         <Text> Facebook11 </Text>
-        <LoginButton
-        style={styles.fbbtn}
-          onLoginFinished={
-            (error, result) => {
-              if (error) {
-                console.log("login has error: " + result.error);
-              } else if (result.isCancelled) {
-                console.log("login is cancelled.");
-              } else {
-//permission
-// LoginManager.logInWithPermissions(["public_profile"]).then(
-//   function(result) {
-//     if (result.isCancelled) {
-//       console.log("Login cancelled");
-//     } else {
-//       console.log(result)
-//       console.log(
-//         "Login success with permissions: " +
-//           result.grantedPermissions.toString()
-//       );
-//     }
-//   },
-//   function(error) {
-//     console.log("Login fail with error: " + error);
-//   }
-// );
-
-                console.log(result)
-                AccessToken.getCurrentAccessToken().then(
-                  (data) => {
-                    console.log("My access token",data.accessToken.toString())
-                    console.log(data)
-                    this.setState({accToken:data.accessToken,
-                    perm:data.permissions,
-                    uid:data.userID})
-                  }
-                )
-              }
-            }
-          }
-          onLogoutFinished={() =>{ 
-            console.log("logout.")
-          }
-            }/>
+      
             <Text>
               {this.state.accToken}
             </Text>
@@ -70,6 +86,15 @@ class Facebook11 extends Component {
             <Text>
               {this.state.uid}
             </Text>
+            <Button
+            title="Login with facebook"
+            onPress={this.onLoginFacebook}
+            />
+        
+        <Button
+            title="Login with Google"
+            onPress={this.onLoginGoogle}
+            />
       </View>
     );
   }

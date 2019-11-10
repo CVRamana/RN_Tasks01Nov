@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { View, Text, FlatList, StyleSheet } from 'react-native';
-
 import Child_func_pass from '../src/Child_func_pass'
 class Parent_func_pass extends Component {
   constructor(props) {

@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 import { View, Text,TouchableOpacity,props,Image } from 'react-native';
 import styles from '../Constants/styles';
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+  listenOrientationChange as loc,
+  removeOrientationListener as rol
+} from 'react-native-responsive-screen';
 
 class Health_Insurance extends Component {
   constructor(props) {
@@ -13,24 +19,20 @@ class Health_Insurance extends Component {
     return (
       <View style={{flexDirection:"row",
       borderRadius:10,
-//       shadowColor: "#000",
-// shadowOffset: {
-// 	width: 0,
-// 	height: 2,
-// },
-// shadowOpacity: 0.25,
-// shadowRadius: 3.84,
 
-// elevation: 5,
-     // margin:10
       }}>
-        <View>
+        <View style={{
+          justifyContent:"center",
+          width: wp('50%'),
+        }}>
         <Text style={{fontSize:20}}> {this.props.txt} </Text>
         </View>
 
         <View style={{flexDirection:"row",
-       // backgroundColor:"pink",
-        marginLeft:30}}>
+      // backgroundColor:"pink",
+       justifyContent:"center",
+        //marginLeft:30,
+        width: wp('50%')}}>
          
         <TouchableOpacity
         style={styles.HI_btn}

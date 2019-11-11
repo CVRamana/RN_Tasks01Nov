@@ -1,9 +1,15 @@
 import {StyleSheet} from 'react-native'
+import {
+    widthPercentageToDP as wp,
+    heightPercentageToDP as hp,
+    listenOrientationChange as loc,
+    removeOrientationListener as rol
+  } from 'react-native-responsive-screen';
+
+
 const styles=StyleSheet.create({
 parent:{
 flex:1,
-
-// backgroundColor:"pink"
 },
 child1:{
     backgroundColor:"#00886f",
@@ -60,7 +66,10 @@ health_beauty:{
     flexDirection:"row",
     paddingTop: 20,
     paddingLeft: 10,
-    borderRadius:10,paddingBottom: 50,
+    borderRadius:10,
+    //justifyContent:"center",
+    //alignItems:"center",
+    paddingBottom: 50,
     shadowColor: "#000",
 shadowOffset: {
 	width: 0,

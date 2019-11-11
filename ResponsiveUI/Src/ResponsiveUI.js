@@ -8,9 +8,25 @@ import Bal_comp from '../ReusableComponent/Bal_comp'
 import Relative_Img from '../ReusableComponent/Relative_Img'
 import History_comp from '../ReusableComponent/History_comp'
 import Business_trip_comp from '../ReusableComponent/Business_trip_comp'
-
+import {
+    widthPercentageToDP as wp,
+    heightPercentageToDP as hp,
+    listenOrientationChange as loc,
+    removeOrientationListener as rol
+  } from 'react-native-responsive-screen';
+  
 
 class ResponsiveUI extends Component {
+    static navigationOptions = {
+        title: 'Responsive UI',
+        headerStyle: {
+          backgroundColor: '#f4511e',
+        },
+        headerTintColor: '#fff',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+        },
+      };
     constructor(props) {
         super(props);
         this.state = {
@@ -50,17 +66,27 @@ source={Images.cloud}
                     <Text style={{ margin: 10 }}>Relatives</Text>
                     {/* Relative Images */}
 
-                    <View style={{ flexDirection: "row" }}>
+                    <View style={{ flexDirection: "row",
+                    width: wp('100%'),
+                   // borderColor:"red",
+                  //  borderWidth:2,
+
+                 }}>
                         <Relative_Img
                             rname="Wife"
                             url={Images.r1}
-                            extraStyle={{marginLeft: 10,}}
+                            extraStyle={{
+                               // marginLeft: 10,
+                              // backgroundColor:"lightgrey"
+                            }}
                             url1={Images.accept}
                         />
                         <Relative_Img
                             rname="Child"
                             url={Images.r1}
-                            extraStyle={{marginLeft: 10,}}
+                            extraStyle={{
+                              //  marginLeft: 10,
+                            }}
                             url1={Images.accept}
                          
                         />
@@ -72,32 +98,41 @@ source={Images.cloud}
                         />
                         <Relative_Img
                             rname="add"
-                            extraStyle={{marginLeft: -10,}}
+                            extraStyle={{
+                                //marginLeft: -10,
+                            }}
                             url={Images.plus}
                            // url1={Images.accept}
                         />
-                        <View style={{height:70,width:3,backgroundColor:"grey"}}>
+                        <View style={{
+                            height:70,
+                          //  width:wp(3%),
+                            backgrundColor:"grey",
+                           // marginLeft:10,
+                        }}>
                             </View>
-                        <View style={{marginTop:5,
-                        //flexDirection:"row",
-                        paddingLeft:10,
-                      //  backgroundColor:"pink"
-                       // alignItems:"center"
-                      // justifyContent:"center"
+                        <View style={{
+                        //alignItems:"center",
+                        justifyContent:"center",
+                        //backgroundColor:"lightgrey",
+                        width:wp('20%'),
+                        paddingTop:10,
+                        
                         }} >
                             <Image
                                 style={styles.Benifit_img}
                                 source={Images.benifit}
                             />
                             <Text
-                            numberOfLines={0}
+                            //numberOfLines={0}
                              style={{ marginTop: 25 ,
                             // marginLeft: 10,
-                        }}>Benefit </Text>
+                        }}>Benefit Transfer </Text>
                         </View>
 
                     </View>
-                    {/* history view all */}
+
+ {/* history view all */}
 
                     <View style={{
                         flexDirection: "row",
@@ -109,7 +144,7 @@ source={Images.cloud}
                         <Text style={styles.Htext}>View all</Text>
 </View>
                     </View>
-                    {/* history  */}
+{/* history  */}
                     <View>
                         <History_comp
                             extraStyle={{
@@ -126,17 +161,38 @@ source={Images.cloud}
                             extraStyle={{paddingBottom: 30,}}
                         />
                     </View>
-                    {/* healt and beauty */}
+{/*  healt and beauty */}
+
                     <View style={styles.health_beauty}>
+                        <View style={{
+                            justifyContent:"center",
+                            width: wp('50%'),
+                        }}>
                         <Text>Health and Beauty</Text>
-                        <View style={{paddingLeft:80}}>
+                        </View>
+                        <View style={{
+                            width: wp('50%'),
+                          
+                            alignItems:"center",
+                           
+                            }}>
                         <Text>5.0000.000000</Text>
                         </View>
                     </View>
                     <View style={styles.course_train}>
+                    <View style={{
+                            justifyContent:"center",
+                            width: wp('50%'),
+                        }}>
+
                         <Text>Course and Training</Text>
-                        <View style={{paddingLeft:70,
-                        backgroundColor:"pink"}}>
+                        </View>
+                        <View style={{
+                           width: wp('50%'),
+                            justifyContent:"center",
+                            alignItems:"center",
+                        //backgroundColor:"pink"
+                        }}>
                         <Text >5.0000.000000</Text>
                         </View>
                     </View>

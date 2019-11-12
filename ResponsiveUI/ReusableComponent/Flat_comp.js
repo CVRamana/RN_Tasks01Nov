@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import { View, Text,StyleSheet } from 'react-native';
+import { View, Text,StyleSheet ,TouchableOpacity} from 'react-native';
+import { widthPercentageToDP } from 'react-native-responsive-screen';
+
+//import { TouchableOpacity } from 'react-native-gesture-handler';
 
 class Flat_comp extends Component {
   constructor(props) {
@@ -11,9 +14,23 @@ class Flat_comp extends Component {
   render() {
     return (
         <View style={styles.fv}>
+          <View style={{flexDirection:"row",flex:1}}>
             <Text style={{fontSize:20}}>{this.props.id+1}: </Text>
+            <Text style={{fontSize:20}}>{this.props.x}</Text>
+            </View>
+<View style={{flexDirection:"row",
+//backgroundColor:"pink",
+justifyContent:"center",
 
-        <Text style={{fontSize:20}}>{this.props.x}</Text>
+alignItems:"center",
+flex:1,
+}}>
+        <TouchableOpacity
+        onPress={this.props.call}>
+          <Text style={{color:"red"}}>DELETE</Text>
+          </TouchableOpacity>
+          </View>
+
         </View>
     );
   }

@@ -4,6 +4,7 @@ import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 import ResponsiveUI from './ResponsiveUI'
 import Todo from './Todo'
+import Mobx_Task2 from './Mobx_Task2'
 
 class ResponsiveTask extends Component {
     static navigationOptions = {
@@ -27,6 +28,10 @@ class ResponsiveTask extends Component {
         style={styles.bttn_nav}
         onPress={()=>this.props.navigation.navigate('UI')}
         />
+        <Button title="Mobx_Taks2"
+        style={styles.bttn_nav}
+        onPress={()=>this.props.navigation.navigate('Mobx_task')}
+        />
         
       </View>
     );
@@ -38,7 +43,8 @@ const AppNavigator = createStackNavigator(
     {
         Home: ResponsiveTask,
         UI: ResponsiveUI,
-        Mobx:Todo
+        Mobx:Todo,
+        Mobx_task:Mobx_Task2
       },
       {
         initialRouteName: 'Home',

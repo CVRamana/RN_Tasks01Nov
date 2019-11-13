@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import { View, Text, Image, Button, StyleSheet,TouchableOpacity } from 'react-native';
-//import styles from '../Constants/styles';
 import CheckBox from 'react-native-check-box'
 
 class Flat_api_comp extends Component {
   constructor(props) {
     super(props);
 this.state={
-  isChecked:true
+  isChecked:false,
+  delete_Array1:[]
 }
+ delete_Array=[]
   }
 
   render() {
@@ -25,17 +26,27 @@ this.state={
         </View>
         <View style={{justifyContent:"center",
         backgroundColor:"pink",
-        //marginRight:10,
         alignItems:"center"}}>
          <CheckBox
                     style={{ flex: 1, padding: 10 }}
-                    onClick={(index) => {
+                    onClick={() => {
                       this.setState({
                         isChecked: !this.state.isChecked
+                      },()=>{
+                      // do after the setState
+                      if(this.state.isChecked){
+                      delete_Array.push(this.props.obj)
+                      alert("selected",delete_Array)
+                      console.log("array to deleted",delete_Array)
+                      }
+                      else{
+                        delete_Array=delete_Array.filter((x)=>{x.id != this.props.obj.id})
+                        alert("deselected",delete_Array)
+                        console.log("array to delete sfter removing",delete_Array)
+                      }
                       })
                     }}
-                 //   if(id ==={item.idex})
-                    isChecked={this.state.isChecked}
+                    isChecked={this.state.isChecked}                   // console.log(object)
                     checkedImage={<Image source={require('../Assets/check.png')} />}
                     unCheckedImage={<Image source={require('../Assets/uncheck.png')} />}
                   />

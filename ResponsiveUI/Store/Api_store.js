@@ -8,7 +8,7 @@ class Api_store{
     @observable id22=""
     @observable payload=[]
     @action MultiDelete(){
- this.payload=this.payload.filter((obj)=>obj.id !== this.id22)
+    this.payload=this.payload.filter((obj)=>obj.id !== this.id22)
 
      //alert("alert from Api",this.id22)
     }

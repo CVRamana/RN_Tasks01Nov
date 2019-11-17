@@ -11,6 +11,7 @@ import Google_Map from './Google_Map'
 import GameApi from './GameApi';
 import TabBar11 from './TabBar11'
 import { createBottomTabNavigator } from 'react-navigation-tabs';
+import RNnavigation from './RNnavigation'
 
 class ResponsiveTask extends Component {
    
@@ -53,6 +54,10 @@ class ResponsiveTask extends Component {
         style={styles.bttn_nav}
         onPress={()=>this.props.navigation.navigate('tab')}
         />
+        <Button title="React Naviagtion"
+        style={styles.bttn_nav}
+        onPress={()=>this.props.navigation.navigate('RN_nav')}
+        />
         
       </View>
     );
@@ -70,7 +75,8 @@ const AppNavigator = createStackNavigator(
         Screen2:Todo_Screen1,
         Google_Map:Google_Map,
         Game:GameApi,
-        tab:TabBar11
+        tab:TabBar11,
+        RN_nav:RNnavigation
 
       },
       {

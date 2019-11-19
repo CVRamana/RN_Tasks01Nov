@@ -33,7 +33,6 @@ const TabBar1 = createBottomTabNavigator(
         TabSettings: TabSettingsScreen,
         Game: GameApi
     },
-
     {
         initialRouteName: 'TabBar11',
         defaultNavigationOptions: ({ navigation }) => ({

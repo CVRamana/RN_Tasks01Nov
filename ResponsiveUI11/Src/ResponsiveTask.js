@@ -11,7 +11,8 @@ import Google_Map from './Google_Map'
 import GameApi from './GameApi';
 import TabBar11 from './TabBar11'
 import { createBottomTabNavigator } from 'react-navigation-tabs';
-import RNnavigation from './RNnavigation'
+import loginScreen from './RNnavigation'
+import vedio11 from './Video11'
 
 class ResponsiveTask extends Component {
    
@@ -59,6 +60,11 @@ class ResponsiveTask extends Component {
         onPress={()=>this.props.navigation.navigate('RN_nav')}
         />
         
+        <Button title="Vedio Player"
+        style={styles.bttn_nav}
+        onPress={()=>this.props.navigation.navigate('Vid')}
+        />
+
       </View>
     );
   }
@@ -76,8 +82,8 @@ const AppNavigator = createStackNavigator(
         Google_Map:Google_Map,
         Game:GameApi,
         tab:TabBar11,
-        RN_nav:RNnavigation
-
+        RN_nav:loginScreen,
+        Vid:vedio11
       },
       {
         initialRouteName: 'Home',

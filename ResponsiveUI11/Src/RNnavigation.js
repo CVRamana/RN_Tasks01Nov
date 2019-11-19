@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
 
 
-class RNnavigation extends Component {
+class loginScreen extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -18,4 +20,8 @@ class RNnavigation extends Component {
   }
 }
 
-export default RNnavigation;
+export default createStackNavigator({
+    Nav_login:{
+        screen:loginScreen
+    }
+});
